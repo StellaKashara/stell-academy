@@ -1,16 +1,239 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stell’A-cademy — Exception is You</title>
-<meta name="description" content="Stell’A-cademy : formations, réseautage, conseil et accompagnement professionnel en Belgique.">
-<style>
-:root{--cream:#f8f4ef;--nude:#e9dcd0;--brown:#553a2d;--accent:#9a755d}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--brown);font-family:Arial,Helvetica,sans-serif}header{display:flex;justify-content:space-between;align-items:center;padding:26px 7%;border-bottom:1px solid #e6dbd2;gap:20px}.brand{font:30px Georgia,serif;white-space:nowrap}.brand small{display:block;font:9px Arial;letter-spacing:5px;text-align:center;margin-top:5px}nav{display:flex;gap:26px}a{color:inherit;text-decoration:none}nav a{font-size:13px}.button{display:inline-block;background:var(--brown);color:white;padding:17px 25px;border-radius:40px;font-size:13px;letter-spacing:1px}.hero{min-height:530px;padding:110px 9% 90px;background:linear-gradient(110deg,#faf7f3 45%,#eadbd0);display:flex;align-items:center}.hero-inner{max-width:760px}.eyebrow{font-size:12px;letter-spacing:6px;text-transform:uppercase;color:var(--accent)}h1{font:clamp(42px,6vw,78px)/1.13 Georgia,serif;font-weight:normal;letter-spacing:-2px;margin:35px 0 25px}h1 em{color:var(--accent);font-weight:normal}.lead{font-size:18px;line-height:1.8;max-width:590px;margin-bottom:35px}section{padding:85px 8%}h2{font:clamp(32px,4vw,48px) Georgia,serif;font-weight:normal;margin:15px 0 20px}.intro{text-align:center;max-width:720px;margin:0 auto 50px;line-height:1.7}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fffdfb;border:1px solid #e9ddd3;padding:35px 28px;min-height:180px}.card h3{font:25px Georgia,serif;font-weight:normal}.card p{font-size:14px;line-height:1.7;color:#72594c}.card span{font-size:12px;letter-spacing:2px;color:var(--accent)}.reserve{text-align:center;background:var(--nude)}.reserve p{line-height:1.8}footer{text-align:center;padding:35px;font-size:12px} @media(max-width:800px){header{flex-wrap:wrap;padding:20px 6%}nav{order:3;width:100%;overflow:auto;white-space:nowrap}.hero{padding:80px 7%;min-height:450px}.grid{grid-template-columns:1fr}section{padding:65px 7%}.brand{font-size:25px}}
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stell’A-cademy — Accompagnement, formation et solutions pratiques en Belgique</title>
+<meta name="description" content="Stell’A-cademy réunit six pôles d’accompagnement, de formation, de mise en relation et de solutions pratiques pour les particuliers, étudiants, indépendants et organisations en Belgique.">
+<meta name="theme-color" content="#F7F1EB">
+<link rel="preload" href="./assets/fonts/bodoni-moda-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/css/style.css">
+<script>document.documentElement.classList.add("js");</script>
+<script src="./assets/js/site.js" defer></script>
 </head>
 <body>
-<header><a class="brand" href="#accueil">Stell’A-cademy<small>EXCEPTION IS YOU</small></a><nav><a href="#accueil">Accueil</a><a href="#domaines">Nos domaines</a><a href="#reservation">Réserver</a></nav></header>
-<main><div class="hero" id="accueil"><div class="hero-inner"><div class="eyebrow">Exception is you</div><h1>Révélez votre potentiel,<br>construisez <em>votre succès.</em></h1><p class="lead">Formations, conseil et accompagnement sur mesure pour donner vie à vos ambitions personnelles et professionnelles.</p><a class="button" href="#reservation">RÉSERVER UN RENDEZ-VOUS →</a></div></div>
-<section id="domaines"><div class="intro"><div class="eyebrow">Nos expertises</div><h2>Un accompagnement à votre image</h2><p>Découvrez les six univers de Stell’A-cademy, pensés pour les particuliers, les entrepreneurs et les organisations.</p></div><div class="grid"><article class="card"><span>01</span><h3>Formations & accompagnement</h3><p>Développez vos compétences et avancez avec confiance.</p></article><article class="card"><span>02</span><h3>Réseautage</h3><p>Créez des liens professionnels porteurs d’opportunités.</p></article><article class="card"><span>03</span><h3>Comptabilité, fiscalité & entrepreneuriat</h3><p>Structurez et développez vos projets d’entreprise.</p></article><article class="card"><span>04</span><h3>Gestion de projets & facility management</h3><p>Organisez vos projets et optimisez vos espaces.</p></article><article class="card"><span>05</span><h3>Conseil en image & créativité</h3><p>Affirmez votre identité et libérez votre créativité.</p></article><article class="card"><span>06</span><h3>Innovation & intelligence artificielle</h3><p>Explorez les outils numériques de demain.</p></article></div></section>
-<section class="reserve" id="reservation"><div class="eyebrow">Votre prochain pas</div><h2>Parlons de votre projet.</h2><p>Les réservations en ligne avec acompte de 20 % seront disponibles prochainement.<br>Cette page est une première version de démonstration.</p></section></main><footer>© Stell’A-cademy — EXCEPTION IS YOU</footer>
-</body></html>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+
+<header class="entete">
+  <div class="conteneur entete__inner">
+    <!-- [À FOURNIR : fichier du logo officiel]
+         En attendant, le nom est écrit en simple texte. Ne jamais le remplacer par un logo recréé. -->
+    <a class="marque" href="./">
+      <span class="marque__nom">Stell’A-cademy</span>
+      <span class="marque__devise" lang="en">Exception is you</span>
+    </a>
+    <button class="menu-bouton" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="menu-bouton__trait" aria-hidden="true"></span>Menu
+    </button>
+    <nav class="menu" id="menu" aria-label="Menu principal">
+      <ul class="menu__liens">
+        <li><a href="./poles/">Nos 6 pôles</a></li>
+        <li><a href="./services-phares/">Services phares</a></li>
+        <li><a href="./consultation-decouverte/">Consultation découverte</a></li>
+        <li><a href="./a-propos/">À propos</a></li>
+        <li><a href="./contact/">Contact</a></li>
+      </ul>
+      <a class="bouton bouton--plein menu__devis" href="./demander-un-devis/">Demander un devis</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+<section class="ouverture">
+  <div class="conteneur ouverture__grille">
+    <p class="ouverture__devise" lang="en" aria-label="Exception is you">Exception <em>is&nbsp;you.</em></p>
+    <div class="ouverture__texte">
+      <h1>Accompagnement, formation, mise en relation et solutions pratiques, réunis en six pôles.</h1>
+      <p class="chapeau">Pour les particuliers, les élèves et étudiants, les indépendants et les organisations qui veulent avancer avec méthode.</p>
+      <div class="actions">
+        <a class="bouton bouton--plein" href="./poles/">Découvrir nos services</a>
+        <a class="bouton bouton--trait" href="./consultation-decouverte/">Réserver une consultation découverte</a>
+      </div>
+      <p class="note">Consultation découverte de 30 minutes, gratuite, en visio ou au lieu de rendez-vous.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" aria-labelledby="titre-poles">
+  <div class="conteneur">
+    <div class="bloc__tete">
+      <p class="surtitre">Ce que nous faisons</p>
+      <h2 id="titre-poles">Nos 6 pôles</h2>
+      <p>Chaque pôle regroupe des prestations précises. Choisissez celui qui correspond à votre besoin, ou réservez une consultation découverte pour être orienté.</p>
+    </div>
+    <ol class="poles">
+      <li class="pole">
+        <span class="pole__numero">Pôle 1</span>
+        <h3><a href="./poles/formation-coaching/">Formation &amp; Coaching</a></h3>
+        <p>Transmettre des compétences, soutenir les parcours scolaires et professionnels, développer l’autonomie.</p>
+      </li>
+      <li class="pole">
+        <span class="pole__numero">Pôle 2</span>
+        <h3><a href="./poles/reseautage-mise-en-relation/">Réseautage &amp; Mise en relation</a></h3>
+        <p>Créer des connexions utiles entre talents, professionnels, entrepreneurs et partenaires.</p>
+      </li>
+      <li class="pole">
+        <span class="pole__numero">Pôle 3</span>
+        <h3><a href="./poles/comptabilite-fiscalite-entrepreneuriat/">Comptabilité, Fiscalité &amp; Entrepreneuriat</a></h3>
+        <p>Le soutien administratif et documentaire des indépendants, en lien avec leur comptable.</p>
+      </li>
+      <li class="pole">
+        <span class="pole__numero">Pôle 4</span>
+        <h3><a href="./poles/project-facility-management/">Project &amp; Facility Management</a></h3>
+        <p>Planifier, coordonner et simplifier les activités, les projets et l’organisation quotidienne.</p>
+      </li>
+      <li class="pole">
+        <span class="pole__numero">Pôle 5</span>
+        <h3><a href="./poles/image-creativite/">Image &amp; Créativité</a></h3>
+        <p>Valoriser les projets et les entreprises grâce à une communication claire et professionnelle.</p>
+      </li>
+      <li class="pole">
+        <span class="pole__numero">Pôle 6</span>
+        <h3><a href="./poles/innovation-intelligence-artificielle/">Innovation &amp; Intelligence Artificielle (IA)</a></h3>
+        <p>Rendre les outils numériques et l’IA accessibles et utiles au quotidien.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="bloc bloc--lin" aria-labelledby="titre-phares">
+  <div class="conteneur">
+    <div class="bloc__tete">
+      <p class="surtitre">Services phares</p>
+      <h2 id="titre-phares">Trois offres pour commencer</h2>
+    </div>
+    <div class="phares">
+      <article class="phare">
+        <p class="phare__pole">Pôle 3</p>
+        <h3>Le bras droit administratif des indépendants</h3>
+        <p>Classement, courriers, dossiers, échéances et préparation des pièces pour votre comptable. Une aide ponctuelle d’abord, puis un suivi mensuel selon le volume de vos documents.</p>
+        <p class="phare__cadre">Votre comptable reste responsable de la comptabilité, des déclarations et des conseils fiscaux.</p>
+        <a class="lien-fleche" href="./demander-un-devis/">Demander un devis</a>
+      </article>
+      <article class="phare">
+        <p class="phare__pole">Pôle 4</p>
+        <h3>Digitalisation &amp; Organisation des entreprises</h3>
+        <p>Formulaire professionnel, agenda de réservation, tableaux de suivi et rappels, pour que les demandes de vos clients arrivent au bon endroit. À l’unité ou en pack.</p>
+        <p class="phare__exemple">Exemple : une coiffeuse reçoit par un simple lien les demandes de devis de ses clientes.</p>
+        <a class="lien-fleche" href="./demander-un-devis/">Demander un devis</a>
+      </article>
+      <article class="phare">
+        <p class="phare__pole">Pôles 1 et 2</p>
+        <h3>Étudiants-Profs <span class="phare__signature">by Stell’A-cademy</span></h3>
+        <p>La mise en relation entre familles et étudiants-profs, pour le soutien scolaire et la préparation aux examens. Premier échange gratuit, premier cours à l’unité, frais présentés clairement.</p>
+        <a class="lien-fleche" href="./services-phares/#etudiants-profs">En savoir plus sur Étudiants-Profs</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" aria-labelledby="titre-carte">
+  <div class="conteneur carte">
+    <div class="bloc__tete">
+      <p class="surtitre">À la carte</p>
+      <h2 id="titre-carte">Des prix de départ clairs</h2>
+      <p>Le prix exact dépend de votre demande. Toutes les autres prestations sont sur devis.</p>
+      <a class="lien-fleche" href="./poles/image-creativite/">Voir le pôle Image &amp; Créativité</a>
+    </div>
+    <div class="tarifs">
+      <dl class="tarifs__liste">
+        <div><dt>Visuels pour les réseaux sociaux</dt><dd><span class="tarifs__mention">à partir de</span> 129&nbsp;€</dd></div>
+        <div><dt>Présentation PowerPoint</dt><dd><span class="tarifs__mention">à partir de</span> 149&nbsp;€</dd></div>
+        <div><dt>Brochure ou catalogue</dt><dd><span class="tarifs__mention">à partir de</span> 149&nbsp;€</dd></div>
+        <div><dt>Optimisation LinkedIn</dt><dd><span class="tarifs__mention">à partir de</span> 79&nbsp;€</dd></div>
+        <div><dt>Mini-site vitrine</dt><dd>sur devis</dd></div>
+      </dl>
+      <p class="tarifs__tva"><span class="a-completer">[À COMPLÉTER : mention TVA : « TVA comprise » ou « hors TVA »]</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="bloc bloc--chocolat" aria-labelledby="titre-consultation">
+  <div class="conteneur appel">
+    <div>
+      <p class="surtitre">Consultation découverte</p>
+      <h2 id="titre-consultation">30 minutes pour faire le point, gratuitement.</h2>
+    </div>
+    <div class="appel__texte">
+      <p>Présentez votre besoin et repartez avec une orientation claire vers le bon pôle. En visio (Google Meet) ou au lieu de rendez-vous.</p>
+      <p>Familles : le premier échange Étudiants-Profs se réserve au même endroit.</p>
+      <a class="bouton bouton--clair" href="./consultation-decouverte/">Réserver une consultation découverte</a>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" aria-labelledby="titre-contact">
+  <div class="conteneur appel">
+    <div>
+      <p class="surtitre">Contact</p>
+      <h2 id="titre-contact">Une question, un projet&nbsp;?</h2>
+    </div>
+    <div class="appel__texte">
+      <p>Écrivez-nous pour toute question, ou décrivez votre besoin pour recevoir un devis.</p>
+      <div class="actions">
+        <a class="bouton bouton--plein" href="./demander-un-devis/">Demander un devis</a>
+        <a class="bouton bouton--trait" href="./contact/">Nous contacter</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pied">
+  <div class="conteneur pied__grille">
+    <div class="pied__marque">
+      <p class="pied__nom">Stell’A-cademy</p>
+      <p class="pied__devise" lang="en">Exception is you</p>
+      <p>Accompagnement, formation, mise en relation et solutions pratiques, en Belgique.</p>
+    </div>
+
+    <nav class="pied__colonne" aria-label="Nos 6 pôles">
+      <h2>Nos 6 pôles</h2>
+      <ul>
+        <li><a href="./poles/formation-coaching/">Formation &amp; Coaching</a></li>
+        <li><a href="./poles/reseautage-mise-en-relation/">Réseautage &amp; Mise en relation</a></li>
+        <li><a href="./poles/comptabilite-fiscalite-entrepreneuriat/">Comptabilité, Fiscalité &amp; Entrepreneuriat</a></li>
+        <li><a href="./poles/project-facility-management/">Project &amp; Facility Management</a></li>
+        <li><a href="./poles/image-creativite/">Image &amp; Créativité</a></li>
+        <li><a href="./poles/innovation-intelligence-artificielle/">Innovation &amp; Intelligence Artificielle (IA)</a></li>
+      </ul>
+    </nav>
+
+    <nav class="pied__colonne" aria-label="Stell’A-cademy">
+      <h2>Stell’A-cademy</h2>
+      <ul>
+        <li><a href="./services-phares/">Services phares</a></li>
+        <li><a href="./consultation-decouverte/">Consultation découverte</a></li>
+        <li><a href="./demander-un-devis/">Demander un devis</a></li>
+        <li><a href="./a-propos/">À propos</a></li>
+        <li><a href="./contact/">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="pied__colonne">
+      <h2>Informations légales</h2>
+      <dl class="pied__legal">
+        <div><dt>Nom légal</dt><dd><span class="a-completer">[À COMPLÉTER : nom légal et forme juridique]</span></dd></div>
+        <div><dt>Adresse</dt><dd><span class="a-completer">[À COMPLÉTER : adresse]</span></dd></div>
+        <div><dt>E-mail</dt><dd><span class="a-completer">[À COMPLÉTER : e-mail professionnel]</span></dd></div>
+        <div><dt>Téléphone</dt><dd><span class="a-completer">[À COMPLÉTER : téléphone]</span></dd></div>
+        <div><dt>N° d’entreprise (BCE)</dt><dd><span class="a-completer">[À COMPLÉTER : numéro BCE]</span></dd></div>
+        <div><dt>TVA</dt><dd><span class="a-completer">[À COMPLÉTER : numéro de TVA, si assujettie]</span></dd></div>
+        <div><dt>Instagram</dt><dd><span class="a-completer">[À COMPLÉTER : lien Instagram]</span></dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="conteneur pied__bas">
+    <p>© 2026 Stell’A-cademy</p>
+    <ul>
+      <li><a href="./mentions-legales/">Mentions légales</a></li>
+      <li><a href="./confidentialite/">Confidentialité</a></li>
+      <li><a href="./conditions-generales/">Conditions générales</a></li>
+      <li><a href="./cookies/">Cookies</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
