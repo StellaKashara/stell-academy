@@ -44,24 +44,24 @@ Pages encore vides : Confidentialité, Conditions générales, Cookies.
 Aucun témoignage ni référence client n’est affiché : à fournir si vous le souhaitez.
 
 ## 6. Photos
-Pour l’instant, des blocs de couleur indiquent l’emplacement de chaque photo.
+✅ = photo déjà en place. Pour les autres, des blocs de couleur indiquent l’emplacement de chaque photo.
 Déposez les photos dans un dossier `images/` avec exactement ces noms : elles remplaceront automatiquement les blocs.
 Format WebP, moins de 300 Ko ; grandes photos 2400 × 1600 px, cartes en portrait 4:5.
 
 | N° | Fichier | Photo | Utilisée sur |
 |----|---------|-------|--------------|
-| 01 | `images/01-entrepreneure-bureau.webp` | Entrepreneure à son bureau, lumière du matin | Accueil, Services phares |
-| 02 | `images/02-atelier-groupe.webp` | Atelier en petit groupe | Pôle 1, Services phares |
-| 03 | `images/03-tete-a-tete-cafe.webp` | Tête-à-tête autour d’un café | Pôle 4, Consultation |
-| 04 | `images/04-mise-en-relation.webp` | Mise en relation | Pôle 2 |
+| 01 | `images/01-entrepreneure-bureau.webp` | ✅ Entrepreneure à son bureau | Accueil, Services phares |
+| 02 | `images/02-atelier-groupe.webp` | ✅ Atelier en petit groupe | Accueil, Pôle 1, Services phares |
+| 03 | `images/03-tete-a-tete-cafe.webp` | ✅ Tête-à-tête autour d’un café | Pôle 4, Consultation |
+| 04 | `images/04-mise-en-relation.webp` | ✅ Mise en relation | Accueil, Pôle 2 |
 | 05 | `images/05-flat-lay-communication.webp` | Vue du dessus : carnet, téléphone, nuancier | Pôle 5 |
-| 06 | `images/06-prise-de-parole.webp` | Prise de parole devant un petit public | Accueil |
-| 07 | `images/07-mains-planning.webp` | Mains qui planifient | Pôle 3, Services phares, Devis |
+| 06 | `images/06-prise-de-parole.webp` | Prise de parole devant un petit public | (réserve) |
+| 07 | `images/07-mains-planning.webp` | ✅ Rendez-vous de travail autour de documents | Pôle 3, Services phares, Devis |
 | 08 | `images/08-ordinateur-strategie.webp` | Ordinateur et stratégie | Pôle 6 |
 | 09 | `images/09-ombres-plantes.webp` | Ombres et plantes sur mur beige | (réserve) |
 | 10 | `images/10-portrait-fondatrice.webp` | **Votre portrait** | À propos, Contact |
 | 11 | `images/11-texture-lin.webp` | Texture lin | (réserve) |
-| 12 | `images/12-details-bureau.webp` | Détails de bureau | Accueil, Pôle 4 |
+| 12 | `images/12-details-bureau.webp` | Détails de bureau | Pôle 4 |
 
 Image de partage (aperçu sur les réseaux sociaux, 1200 × 630 px) : à prévoir avec les photos.
 

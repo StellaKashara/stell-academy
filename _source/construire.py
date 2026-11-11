@@ -37,13 +37,13 @@ RACINE_DEPOT = SOURCE.parent
 
 # Banque d'images : numéro -> (fichier, description de la photo prévue, couleur d'attente)
 PHOTOS = {
-    "01": ("01-entrepreneure-bureau", "Entrepreneure à son bureau, lumière du matin", "Une femme souriante travaille sur son ordinateur près d’une fenêtre, dans un intérieur crème et bois clair.", "#D9B9A0"),
-    "02": ("02-atelier-groupe", "Atelier en petit groupe", "Quatre à six personnes autour d’une grande table, carnets ouverts, ambiance studieuse et détendue.", "#E8DCCB"),
-    "03": ("03-tete-a-tete-cafe", "Tête-à-tête autour d’un café", "Deux personnes échangent autour d’un café, cadrage serré sur les mains et les tasses.", "#C9AE97"),
-    "04": ("04-mise-en-relation", "Mise en relation", "Échange chaleureux lors d’un petit événement professionnel, arrière-plan flou.", "#A88B74"),
+    "01": ("01-entrepreneure-bureau", "Entrepreneure à son bureau, lumière du matin", "Une entrepreneure souriante, en blazer beige, réfléchit à son bureau devant son ordinateur portable.", "#D9B9A0"),
+    "02": ("02-atelier-groupe", "Atelier en petit groupe", "Un formateur anime un atelier devant un petit groupe attentif réuni autour d’une table.", "#E8DCCB"),
+    "03": ("03-tete-a-tete-cafe", "Tête-à-tête autour d’un café", "Deux femmes travaillent ensemble autour d’un carnet ouvert, une tasse de café sur la table.", "#C9AE97"),
+    "04": ("04-mise-en-relation", "Mise en relation", "Trois professionnels échangent leurs cartes de visite lors d’un événement de réseautage.", "#A88B74"),
     "05": ("05-flat-lay-communication", "Communication", "Vue du dessus d’un carnet, d’un smartphone, d’un nuancier beige et d’un stylo doré sur fond de lin.", "#F1E7DA"),
     "06": ("06-prise-de-parole", "Prise de parole", "Une intervenante s’adresse à un petit public, vue de trois-quarts.", "#B89A82"),
-    "07": ("07-mains-planning", "Mains qui planifient", "Des mains écrivent dans un agenda sur papier crème, en lumière rasante.", "#DCC6B2"),
+    "07": ("07-mains-planning", "Rendez-vous de travail", "Une conseillère présente des documents à deux personnes autour d’un bureau.", "#DCC6B2"),
     "08": ("08-ordinateur-strategie", "Ordinateur et stratégie", "Ordinateur portable ouvert, tasse et documents posés sur un bureau épuré.", "#E5D3C1"),
     "09": ("09-ombres-plantes", "Ombres et plantes", "Ombre de feuillage sur un mur beige.", "#EADFD0"),
     "10": ("10-portrait-fondatrice", "Portrait de la fondatrice", "Portrait de la fondatrice de Stell’A-cademy, assise, sur fond crème.", "#6B4A36"),
@@ -82,7 +82,7 @@ def photo(m):
     chemin = RACINE_DEPOT / "images" / f"{fichier}.webp"
     if chemin.exists():
         dedans = (f'<img src="{{{{racine}}}}images/{fichier}.webp" alt="{alt}" '
-                  f'width="1200" height="1500" loading="{chargement}" decoding="async">')
+                  f'width="1672" height="941" loading="{chargement}" decoding="async">')
         return f'<div class="photo {classes}">{dedans}</div>'
     return (f'<div class="photo photo--attente {classes}" style="--ton:{ton}" role="img" aria-label="{alt}" '
             f'data-fichier="images/{fichier}.webp"><span class="photo__etiquette" aria-hidden="true">'
