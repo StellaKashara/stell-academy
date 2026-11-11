@@ -3,16 +3,86 @@ titre: Services phares — Stell’A-cademy
 description: Les trois offres phares de Stell’A-cademy : bras droit administratif, digitalisation et Étudiants-Profs.
 menu: services-phares
 ---
-<section class="page-titre">
+<section class="sombre hero hero--page" aria-labelledby="titre-phares">
   <div class="conteneur">
-    <p class="surtitre">Services phares</p>
-    <h1>Services phares</h1>
-    <p class="chapeau">Le bras droit administratif des indépendants, la digitalisation des entreprises et Étudiants-Profs.</p>
+    <nav class="fil-ariane" aria-label="Fil d’Ariane">
+      <ol>
+        <li><a href="{{racine}}">Accueil</a></li>
+        <li aria-current="page">Services phares</li>
+      </ol>
+    </nav>
+    <div class="hero__grille hero__grille--bas">
+      <div class="hero__texte">
+        <p class="surtitre">Services phares</p>
+        <h1 id="titre-phares" class="grand">Trois offres <em>pour commencer.</em></h1>
+      </div>
+      <p class="chapeau">Le bras droit administratif des indépendants, la digitalisation des entreprises et Étudiants-Profs.</p>
+    </div>
   </div>
 </section>
 
-<section class="bloc">
+<section class="bloc" id="bras-droit" aria-labelledby="titre-bras-droit">
   <div class="conteneur">
-    <p class="en-preparation">Page en préparation : elle sera construite à l’étape 3.</p>
+    <div class="offre">
+      {{photo:07}}
+      <div class="offre__texte">
+        <p class="surtitre">Pôle 3 · Comptabilité, Fiscalité &amp; Entrepreneuriat</p>
+        <h2 id="titre-bras-droit">Le bras droit administratif <em>des indépendants.</em></h2>
+        <p class="texte-2">Classement, courriers, dossiers, échéances et préparation des pièces pour votre comptable. Une aide ponctuelle d’abord, puis un suivi mensuel selon le volume de vos documents.</p>
+        <p class="offre__cadre">Votre comptable reste responsable de la comptabilité, des déclarations et des conseils fiscaux.</p>
+        <p class="prix"><strong>[[prix de l’aide ponctuelle et du suivi mensuel, ou « sur devis »]]</strong></p>
+        <div class="actions">
+          <a class="bouton bouton--plein" href="{{racine}}demander-un-devis/?pole=3">Demander un devis</a>
+          <a class="bouton bouton--trait" href="{{racine}}poles/comptabilite-fiscalite-entrepreneuriat/">Voir le pôle 3</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloc beige" id="digitalisation" aria-labelledby="titre-digitalisation">
+  <div class="conteneur">
+    <div class="offre">
+      <div class="offre__texte">
+        <p class="surtitre">Pôle 4 · Project &amp; Facility Management</p>
+        <h2 id="titre-digitalisation">Digitalisation &amp; <em>Organisation des entreprises.</em></h2>
+        <p class="texte-2">Formulaire professionnel, agenda de réservation, tableaux de suivi et rappels, pour que les demandes de vos clients arrivent au bon endroit. À l’unité ou en pack.</p>
+        <p class="offre__cadre">Exemple&nbsp;: une coiffeuse reçoit par un simple lien les demandes de devis de ses clientes.</p>
+        <p class="prix"><strong>[[prix à l’unité et prix du pack, ou « sur devis »]]</strong></p>
+        <div class="actions">
+          <a class="bouton bouton--plein" href="{{racine}}demander-un-devis/?pole=4">Demander un devis</a>
+          <a class="bouton bouton--trait" href="{{racine}}poles/project-facility-management/">Voir le pôle 4</a>
+        </div>
+      </div>
+      {{photo:01}}
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="etudiants-profs" aria-labelledby="titre-etudiants-profs">
+  <div class="conteneur">
+    <div class="offre">
+      {{photo:02}}
+      <div class="offre__texte">
+        <p class="surtitre">Pôles 1 et 2 · Formation &amp; Réseautage</p>
+        <h2 id="titre-etudiants-profs">Étudiants-Profs <span class="signature">by Stell’A-cademy</span></h2>
+        <p class="texte-2">La mise en relation entre familles et étudiants-profs, pour le soutien scolaire et la préparation aux examens. Premier échange gratuit, premier cours à l’unité, frais présentés clairement.</p>
+        <p class="prix"><strong>[[prix d’un cours et frais de mise en relation]]</strong></p>
+        <div class="actions">
+          <a class="bouton bouton--plein" href="{{racine}}consultation-decouverte/?pole=1">Réserver le premier échange</a>
+          <a class="bouton bouton--trait" href="{{racine}}poles/formation-coaching/">Voir le pôle 1</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sombre appel" aria-labelledby="titre-appel">
+  <div class="conteneur">
+    <h2 id="titre-appel">Une question sur<br><em>une offre&nbsp;?</em></h2>
+    <div class="actions">
+      <a class="bouton bouton--nude" href="{{racine}}demander-un-devis/">Demander un devis</a>
+      <a class="bouton bouton--trait" href="{{racine}}contact/">Nous écrire</a>
+    </div>
   </div>
 </section>

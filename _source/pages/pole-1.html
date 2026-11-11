@@ -3,16 +3,106 @@ titre: Formation & Coaching — Stell’A-cademy
 description: Pôle 1 de Stell’A-cademy : formations, ateliers, coaching et Étudiants-Profs.
 menu: poles
 ---
-<section class="page-titre">
+<section class="sombre hero hero--page" aria-labelledby="titre-pole">
   <div class="conteneur">
-    <p class="surtitre">Pôle 1</p>
-    <h1>Formation &amp; Coaching</h1>
-    <p class="chapeau">Transmettre des compétences, soutenir les parcours scolaires et professionnels, développer l’autonomie.</p>
+    <nav class="fil-ariane" aria-label="Fil d’Ariane">
+      <ol>
+        <li><a href="{{racine}}">Accueil</a></li>
+        <li><a href="{{racine}}poles/">Nos 6 pôles</a></li>
+        <li aria-current="page">Formation &amp; Coaching</li>
+      </ol>
+    </nav>
+    <div class="hero__grille hero__grille--bas">
+      <div class="hero__texte">
+        <p class="surtitre">Pôle 01</p>
+        <h1 id="titre-pole">Formation &amp; Coaching</h1>
+        <p class="chapeau">Transmettre des compétences, soutenir les parcours scolaires et professionnels, développer l’autonomie.</p>
+        <div class="actions">
+          <a class="bouton bouton--nude" href="#sessions">Voir les prochaines sessions</a>
+          <a class="bouton bouton--trait" href="{{racine}}contact/?pole=1">Prendre rendez-vous</a>
+        </div>
+      </div>
+      {{photo:02 photo--haute hero}}
+    </div>
   </div>
 </section>
 
-<section class="bloc">
+<section class="bloc" aria-labelledby="titre-offres">
   <div class="conteneur">
-    <p class="en-preparation">Page en préparation : elle sera construite à l’étape 2.</p>
+    <h2 id="titre-offres">Trois formats, <em>selon vos besoins.</em></h2>
+    <div class="colonnes colonnes--serrees">
+      <article class="filet">
+        <span class="lettre">a.</span>
+        <h3>Formations et ateliers</h3>
+        <p>Des formations pratiques, en petit groupe ou en individuel, pour gagner en compétences et en autonomie.</p>
+        <p class="prix">[[durée et prix, ou « sur devis »]]</p>
+      </article>
+      <article class="filet">
+        <span class="lettre">b.</span>
+        <h3>Coaching</h3>
+        <p>Un accompagnement individuel pour clarifier vos objectifs et avancer à votre rythme, dans votre parcours scolaire ou professionnel.</p>
+        <p class="prix">[[durée et prix, ou « sur devis »]]</p>
+      </article>
+      <article class="filet">
+        <span class="lettre">c.</span>
+        <h3>Étudiants-Profs</h3>
+        <p>La mise en relation entre familles et étudiants-profs, pour le soutien scolaire et la préparation aux examens.</p>
+        <p class="prix">Premier échange gratuit · premier cours à l’unité</p>
+        <a class="lien-fleche" href="{{racine}}services-phares/#etudiants-profs">En savoir plus</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="bloc beige" id="sessions" aria-labelledby="titre-sessions">
+  <div class="conteneur">
+    <div class="tete">
+      <h2 id="titre-sessions">Prochaines sessions</h2>
+      <p>Places limitées par session.</p>
+    </div>
+    <div class="tableau-defile" tabindex="0" role="region" aria-labelledby="titre-sessions">
+      <table class="tableau">
+        <thead>
+          <tr><th scope="col">Date</th><th scope="col">Thème</th><th scope="col">Format</th><th scope="col">Lieu</th><th scope="col"><span class="visuellement-cache">Inscription</span></th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tableau__date">[[date]]</td>
+            <td><strong>[[thème]]</strong></td>
+            <td>Atelier collectif</td>
+            <td>[[ville ou « en ligne »]]</td>
+            <td class="tableau__action"><a href="{{racine}}contact/?pole=1">S’inscrire<span class="visuellement-cache"> à cette session</span> →</a></td>
+          </tr>
+          <tr>
+            <td class="tableau__date">[[date]]</td>
+            <td><strong>[[thème]]</strong></td>
+            <td>Atelier collectif</td>
+            <td>[[ville ou « en ligne »]]</td>
+            <td class="tableau__action"><a href="{{racine}}contact/?pole=1">S’inscrire<span class="visuellement-cache"> à cette session</span> →</a></td>
+          </tr>
+          <tr>
+            <td class="tableau__date">[[date]]</td>
+            <td><strong>[[thème]]</strong></td>
+            <td>Formation individuelle</td>
+            <td>[[ville ou « en ligne »]]</td>
+            <td class="tableau__action"><a href="{{racine}}contact/?pole=1">S’inscrire<span class="visuellement-cache"> à cette session</span> →</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" aria-labelledby="titre-autres">
+  <div class="conteneur">
+    <h2 class="surtitre" id="titre-autres">Les autres pôles</h2>
+    {{autres-poles:1}}
+  </div>
+</section>
+
+<section class="sombre appel" aria-labelledby="titre-appel">
+  <div class="conteneur">
+    <h2 id="titre-appel">Une question sur<br><em>une formation&nbsp;?</em></h2>
+    <a class="bouton bouton--nude" href="{{racine}}contact/?pole=1">Nous écrire</a>
   </div>
 </section>

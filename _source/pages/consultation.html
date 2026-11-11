@@ -1,18 +1,48 @@
 chemin: consultation-decouverte/
 titre: Consultation découverte gratuite — Stell’A-cademy
-description: Réservez une consultation découverte gratuite de 30 minutes avec Stell’A-cademy.
+description: Réservez une consultation découverte gratuite de 30 minutes avec Stell’A-cademy, en visio ou au lieu de rendez-vous.
 menu: consultation
 ---
-<section class="page-titre">
+<section class="sombre hero hero--page" aria-labelledby="titre-consultation">
   <div class="conteneur">
-    <p class="surtitre">30 minutes, gratuite</p>
-    <h1>Consultation découverte gratuite</h1>
-    
+    <nav class="fil-ariane" aria-label="Fil d’Ariane">
+      <ol>
+        <li><a href="{{racine}}">Accueil</a></li>
+        <li aria-current="page">Consultation découverte</li>
+      </ol>
+    </nav>
+    <div class="hero__grille">
+      <div class="hero__texte">
+        <p class="surtitre">30 minutes, gratuite</p>
+        <h1 id="titre-consultation">30 minutes pour <em>faire le point.</em></h1>
+        <p class="chapeau">Présentez votre besoin et repartez avec une orientation claire vers le bon pôle.</p>
+        <div class="actions">
+          <a class="bouton bouton--nude" href="#reserver">Réserver ma consultation</a>
+        </div>
+      </div>
+      {{photo:03 photo--haute hero}}
+    </div>
   </div>
 </section>
 
-<section class="bloc">
+<section class="bloc" aria-labelledby="titre-deroulement">
   <div class="conteneur">
-    <p class="en-preparation">Page en préparation : elle sera construite à l’étape 4.</p>
+    <h2 id="titre-deroulement">Comment <em>ça se passe.</em></h2>
+    <div class="colonnes">
+      <div class="filet"><strong>30 minutes, gratuites</strong><p>Un premier échange sans engagement pour comprendre votre situation.</p></div>
+      <div class="filet"><strong>En visio ou en personne</strong><p>Sur Google Meet, ou au lieu de rendez-vous&nbsp;: [[ville ou adresse du lieu de rendez-vous]].</p></div>
+      <div class="filet"><strong>Une orientation claire</strong><p>Vous repartez en sachant quel pôle et quelle offre correspondent à votre besoin.</p></div>
+    </div>
+    <p class="texte-2">Familles&nbsp;: le premier échange Étudiants-Profs se réserve au même endroit.</p>
+  </div>
+</section>
+
+<section class="bloc beige" id="reserver" aria-labelledby="titre-reserver">
+  <div class="conteneur">
+    <div class="tete">
+      <h2 id="titre-reserver">Réserver <em>ma consultation.</em></h2>
+      <p>Indiquez vos disponibilités&nbsp;: nous vous proposons un créneau. [[lien vers votre agenda de réservation en ligne, si vous en utilisez un]]</p>
+    </div>
+    {{formulaire:consultation}}
   </div>
 </section>

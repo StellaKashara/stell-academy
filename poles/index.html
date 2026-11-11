@@ -5,9 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nos 6 pôles — Stell’A-cademy</title>
 <meta name="description" content="Les six pôles de Stell’A-cademy : formation, réseautage, soutien administratif, gestion de projets, image et intelligence artificielle.">
-<meta name="theme-color" content="#F7F1EB">
+<meta name="theme-color" content="#2E211A">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_BE">
+<meta property="og:site_name" content="Stell’A-cademy">
+<meta property="og:title" content="Nos 6 pôles — Stell’A-cademy">
+<meta property="og:description" content="Les six pôles de Stell’A-cademy : formation, réseautage, soutien administratif, gestion de projets, image et intelligence artificielle.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="../assets/fonts/bodoni-moda-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="../assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/css/style.css">
 <script>document.documentElement.classList.add("js");</script>
 <script src="../assets/js/site.js" defer></script>
@@ -32,25 +38,81 @@
         <li><a href="../services-phares/">Services phares</a></li>
         <li><a href="../consultation-decouverte/">Consultation découverte</a></li>
         <li><a href="../a-propos/">À propos</a></li>
-        <li><a href="../contact/">Contact</a></li>
       </ul>
-      <a class="bouton bouton--plein menu__devis" href="../demander-un-devis/">Demander un devis</a>
+      <a class="bouton bouton--nude menu__contact" href="../contact/">Contact</a>
     </nav>
   </div>
 </header>
 
 <main id="contenu">
-<section class="page-titre">
+<section class="sombre hero hero--page" aria-labelledby="titre-poles">
   <div class="conteneur">
-    <p class="surtitre">Ce que nous faisons</p>
-    <h1>Nos 6 pôles</h1>
-    <p class="chapeau">Choisissez le pôle qui correspond à votre besoin.</p>
+    <nav class="fil-ariane" aria-label="Fil d’Ariane">
+      <ol>
+        <li><a href="../">Accueil</a></li>
+        <li aria-current="page">Nos 6 pôles</li>
+      </ol>
+    </nav>
+    <div class="hero__grille hero__grille--bas">
+      <div class="hero__texte">
+        <p class="surtitre">Ce que nous faisons</p>
+        <h1 id="titre-poles" class="grand">Nos <em>6 pôles.</em></h1>
+      </div>
+      <p class="chapeau">Chaque pôle regroupe des prestations précises. Choisissez celui qui correspond à votre besoin, ou réservez une consultation découverte pour être orienté.</p>
+    </div>
   </div>
 </section>
 
-<section class="bloc">
+<section class="bloc" aria-label="Liste des pôles">
   <div class="conteneur">
-    <p class="en-preparation">Page en préparation : elle sera construite à l’étape 2.</p>
+    <ol class="cartes-poles">
+      <li class="carte-pole">
+        <div class="photo photo--attente photo--carte" style="--ton:#E8DCCB" role="img" aria-label="Quatre à six personnes autour d’une grande table, carnets ouverts, ambiance studieuse et détendue." data-fichier="images/02-atelier-groupe.webp"><span class="photo__etiquette" aria-hidden="true">Photo 02 · Atelier en petit groupe</span></div>
+        <span class="numero">01</span>
+        <h2><a href="../poles/formation-coaching/">Formation &amp; Coaching</a></h2>
+        <p>Transmettre des compétences, soutenir les parcours scolaires et professionnels, développer l’autonomie.</p>
+      </li>
+      <li class="carte-pole">
+        <div class="photo photo--attente photo--carte" style="--ton:#A88B74" role="img" aria-label="Échange chaleureux lors d’un petit événement professionnel, arrière-plan flou." data-fichier="images/04-mise-en-relation.webp"><span class="photo__etiquette" aria-hidden="true">Photo 04 · Mise en relation</span></div>
+        <span class="numero">02</span>
+        <h2><a href="../poles/reseautage-mise-en-relation/">Réseautage &amp; Mise en relation</a></h2>
+        <p>Créer des connexions utiles entre talents, professionnels, entrepreneurs et partenaires.</p>
+      </li>
+      <li class="carte-pole">
+        <div class="photo photo--attente photo--carte" style="--ton:#DCC6B2" role="img" aria-label="Des mains écrivent dans un agenda sur papier crème, en lumière rasante." data-fichier="images/07-mains-planning.webp"><span class="photo__etiquette" aria-hidden="true">Photo 07 · Mains qui planifient</span></div>
+        <span class="numero">03</span>
+        <h2><a href="../poles/comptabilite-fiscalite-entrepreneuriat/">Comptabilité, Fiscalité &amp; Entrepreneuriat</a></h2>
+        <p>Le soutien administratif et documentaire des indépendants, en lien avec leur comptable.</p>
+      </li>
+      <li class="carte-pole">
+        <div class="photo photo--attente photo--carte" style="--ton:#C9AE97" role="img" aria-label="Deux personnes échangent autour d’un café, cadrage serré sur les mains et les tasses." data-fichier="images/03-tete-a-tete-cafe.webp"><span class="photo__etiquette" aria-hidden="true">Photo 03 · Tête-à-tête autour d’un café</span></div>
+        <span class="numero">04</span>
+        <h2><a href="../poles/project-facility-management/">Project &amp; Facility Management</a></h2>
+        <p>Planifier, coordonner et simplifier les activités, les projets et l’organisation quotidienne.</p>
+      </li>
+      <li class="carte-pole">
+        <div class="photo photo--attente photo--carte" style="--ton:#F1E7DA" role="img" aria-label="Vue du dessus d’un carnet, d’un smartphone, d’un nuancier beige et d’un stylo doré sur fond de lin." data-fichier="images/05-flat-lay-communication.webp"><span class="photo__etiquette" aria-hidden="true">Photo 05 · Communication</span></div>
+        <span class="numero">05</span>
+        <h2><a href="../poles/image-creativite/">Image &amp; Créativité</a></h2>
+        <p>Valoriser les projets et les entreprises grâce à une communication claire et professionnelle.</p>
+      </li>
+      <li class="carte-pole">
+        <div class="photo photo--attente photo--carte" style="--ton:#E5D3C1" role="img" aria-label="Ordinateur portable ouvert, tasse et documents posés sur un bureau épuré." data-fichier="images/08-ordinateur-strategie.webp"><span class="photo__etiquette" aria-hidden="true">Photo 08 · Ordinateur et stratégie</span></div>
+        <span class="numero">06</span>
+        <h2><a href="../poles/innovation-intelligence-artificielle/">Innovation &amp; Intelligence Artificielle</a></h2>
+        <p>Rendre les outils numériques et l’IA accessibles et utiles au quotidien.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="sombre appel" aria-labelledby="titre-appel">
+  <div class="conteneur">
+    <div>
+      <h2 id="titre-appel">Vous hésitez<br><em>entre deux pôles&nbsp;?</em></h2>
+      <p>La consultation découverte de 30 minutes, gratuite, sert justement à vous orienter.</p>
+    </div>
+    <a class="bouton bouton--nude" href="../consultation-decouverte/">Réserver une consultation</a>
   </div>
 </section>
 </main>
@@ -61,6 +123,7 @@
       <p class="pied__nom">Stell’A-cademy</p>
       <p class="pied__devise" lang="en">Exception is you</p>
       <p>Accompagnement, formation, mise en relation et solutions pratiques, en Belgique.</p>
+      <p><a href="../contact/">Prendre rendez-vous</a></p>
     </div>
 
     <nav class="pied__colonne" aria-label="Nos 6 pôles">
@@ -71,7 +134,7 @@
         <li><a href="../poles/comptabilite-fiscalite-entrepreneuriat/">Comptabilité, Fiscalité &amp; Entrepreneuriat</a></li>
         <li><a href="../poles/project-facility-management/">Project &amp; Facility Management</a></li>
         <li><a href="../poles/image-creativite/">Image &amp; Créativité</a></li>
-        <li><a href="../poles/innovation-intelligence-artificielle/">Innovation &amp; Intelligence Artificielle (IA)</a></li>
+        <li><a href="../poles/innovation-intelligence-artificielle/">Innovation &amp; Intelligence Artificielle</a></li>
       </ul>
     </nav>
 

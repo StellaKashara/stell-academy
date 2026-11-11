@@ -3,16 +3,73 @@ titre: Nos 6 pôles — Stell’A-cademy
 description: Les six pôles de Stell’A-cademy : formation, réseautage, soutien administratif, gestion de projets, image et intelligence artificielle.
 menu: poles
 ---
-<section class="page-titre">
+<section class="sombre hero hero--page" aria-labelledby="titre-poles">
   <div class="conteneur">
-    <p class="surtitre">Ce que nous faisons</p>
-    <h1>Nos 6 pôles</h1>
-    <p class="chapeau">Choisissez le pôle qui correspond à votre besoin.</p>
+    <nav class="fil-ariane" aria-label="Fil d’Ariane">
+      <ol>
+        <li><a href="{{racine}}">Accueil</a></li>
+        <li aria-current="page">Nos 6 pôles</li>
+      </ol>
+    </nav>
+    <div class="hero__grille hero__grille--bas">
+      <div class="hero__texte">
+        <p class="surtitre">Ce que nous faisons</p>
+        <h1 id="titre-poles" class="grand">Nos <em>6 pôles.</em></h1>
+      </div>
+      <p class="chapeau">Chaque pôle regroupe des prestations précises. Choisissez celui qui correspond à votre besoin, ou réservez une consultation découverte pour être orienté.</p>
+    </div>
   </div>
 </section>
 
-<section class="bloc">
+<section class="bloc" aria-label="Liste des pôles">
   <div class="conteneur">
-    <p class="en-preparation">Page en préparation : elle sera construite à l’étape 2.</p>
+    <ol class="cartes-poles">
+      <li class="carte-pole">
+        {{photo:02 photo--carte}}
+        <span class="numero">01</span>
+        <h2><a href="{{racine}}poles/formation-coaching/">Formation &amp; Coaching</a></h2>
+        <p>Transmettre des compétences, soutenir les parcours scolaires et professionnels, développer l’autonomie.</p>
+      </li>
+      <li class="carte-pole">
+        {{photo:04 photo--carte}}
+        <span class="numero">02</span>
+        <h2><a href="{{racine}}poles/reseautage-mise-en-relation/">Réseautage &amp; Mise en relation</a></h2>
+        <p>Créer des connexions utiles entre talents, professionnels, entrepreneurs et partenaires.</p>
+      </li>
+      <li class="carte-pole">
+        {{photo:07 photo--carte}}
+        <span class="numero">03</span>
+        <h2><a href="{{racine}}poles/comptabilite-fiscalite-entrepreneuriat/">Comptabilité, Fiscalité &amp; Entrepreneuriat</a></h2>
+        <p>Le soutien administratif et documentaire des indépendants, en lien avec leur comptable.</p>
+      </li>
+      <li class="carte-pole">
+        {{photo:03 photo--carte}}
+        <span class="numero">04</span>
+        <h2><a href="{{racine}}poles/project-facility-management/">Project &amp; Facility Management</a></h2>
+        <p>Planifier, coordonner et simplifier les activités, les projets et l’organisation quotidienne.</p>
+      </li>
+      <li class="carte-pole">
+        {{photo:05 photo--carte}}
+        <span class="numero">05</span>
+        <h2><a href="{{racine}}poles/image-creativite/">Image &amp; Créativité</a></h2>
+        <p>Valoriser les projets et les entreprises grâce à une communication claire et professionnelle.</p>
+      </li>
+      <li class="carte-pole">
+        {{photo:08 photo--carte}}
+        <span class="numero">06</span>
+        <h2><a href="{{racine}}poles/innovation-intelligence-artificielle/">Innovation &amp; Intelligence Artificielle</a></h2>
+        <p>Rendre les outils numériques et l’IA accessibles et utiles au quotidien.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="sombre appel" aria-labelledby="titre-appel">
+  <div class="conteneur">
+    <div>
+      <h2 id="titre-appel">Vous hésitez<br><em>entre deux pôles&nbsp;?</em></h2>
+      <p>La consultation découverte de 30 minutes, gratuite, sert justement à vous orienter.</p>
+    </div>
+    <a class="bouton bouton--nude" href="{{racine}}consultation-decouverte/">Réserver une consultation</a>
   </div>
 </section>

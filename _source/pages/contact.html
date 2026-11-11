@@ -1,18 +1,21 @@
 chemin: contact/
-titre: Contact — Stell’A-cademy
-description: Contactez Stell’A-cademy.
+titre: Contact et rendez-vous — Stell’A-cademy
+description: Écrivez à Stell’A-cademy ou demandez un rendez-vous : premier échange gratuit et sans engagement.
 menu: contact
 ---
-<section class="page-titre">
-  <div class="conteneur">
-    <p class="surtitre">Nous écrire</p>
-    <h1>Contact</h1>
-    
+<div class="conteneur contact">
+  <div class="contact__aside">
+    <p class="surtitre">Contact &amp; rendez-vous</p>
+    <h1>Parlons de<br><em>votre projet.</em></h1>
+    <p class="texte-2">Dites-nous où vous en êtes&nbsp;: nous revenons vers vous pour fixer un premier échange gratuit et sans engagement.</p>
+    {{photo:10}}
+    <dl class="coordonnees">
+      <dt>E-mail</dt><dd>[[votre e-mail de contact]]</dd>
+      <dt>Téléphone</dt><dd>[[votre numéro]]</dd>
+      <dt>Lieu</dt><dd>[[ville]] · rendez-vous aussi en visio (Google Meet)</dd>
+    </dl>
   </div>
-</section>
-
-<section class="bloc">
-  <div class="conteneur">
-    <p class="en-preparation">Page en préparation : elle sera construite à l’étape 4.</p>
-  </div>
-</section>
+  <section class="contact__principal" aria-label="Formulaire de contact">
+    {{formulaire:contact}}
+  </section>
+</div>

@@ -5,9 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Demander un devis — Stell’A-cademy</title>
 <meta name="description" content="Décrivez votre besoin et recevez un devis de Stell’A-cademy.">
-<meta name="theme-color" content="#F7F1EB">
+<meta name="theme-color" content="#2E211A">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_BE">
+<meta property="og:site_name" content="Stell’A-cademy">
+<meta property="og:title" content="Demander un devis — Stell’A-cademy">
+<meta property="og:description" content="Décrivez votre besoin et recevez un devis de Stell’A-cademy.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="../assets/fonts/bodoni-moda-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="../assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/css/style.css">
 <script>document.documentElement.classList.add("js");</script>
 <script src="../assets/js/site.js" defer></script>
@@ -32,27 +38,67 @@
         <li><a href="../services-phares/">Services phares</a></li>
         <li><a href="../consultation-decouverte/">Consultation découverte</a></li>
         <li><a href="../a-propos/">À propos</a></li>
-        <li><a href="../contact/">Contact</a></li>
       </ul>
-      <a class="bouton bouton--plein menu__devis" href="../demander-un-devis/" aria-current="page">Demander un devis</a>
+      <a class="bouton bouton--nude menu__contact" href="../contact/">Contact</a>
     </nav>
   </div>
 </header>
 
 <main id="contenu">
-<section class="page-titre">
-  <div class="conteneur">
+<div class="conteneur contact">
+  <div class="contact__aside">
     <p class="surtitre">Votre projet</p>
-    <h1>Demander un devis</h1>
-    
+    <h1>Demander<br><em>un devis.</em></h1>
+    <p class="texte-2">Décrivez votre besoin en quelques lignes&nbsp;: quoi, pour quand, en quelle quantité. Nous revenons vers vous avec un devis clair.</p>
+    <div class="photo photo--attente " style="--ton:#DCC6B2" role="img" aria-label="Des mains écrivent dans un agenda sur papier crème, en lumière rasante." data-fichier="images/07-mains-planning.webp"><span class="photo__etiquette" aria-hidden="true">Photo 07 · Mains qui planifient</span></div>
+    <p class="note">Certaines prestations ont un prix de départ affiché&nbsp;: voir le pôle <a href="../poles/image-creativite/#tarifs">Image &amp; Créativité</a>.</p>
   </div>
-</section>
-
-<section class="bloc">
-  <div class="conteneur">
-    <p class="en-preparation">Page en préparation : elle sera construite à l’étape 4.</p>
+  <section class="contact__principal" aria-label="Formulaire de demande de devis">
+    <div class="formulaire-carte" data-formulaire>
+  <form class="formulaire" action="https://formspree.io/f/VOTRE-IDENTIFIANT" method="post">
+    <input type="hidden" name="_subject" value="Demande de devis depuis le site">
+    <fieldset class="formulaire__poles">
+      <legend>Pour quel pôle souhaitez-vous un devis ?</legend>
+      <div class="choix-grille">
+<label class="choix"><input type="radio" name="pole" value="1"><span>Formation &amp; Coaching</span></label>
+<label class="choix"><input type="radio" name="pole" value="2"><span>Réseautage &amp; Mise en relation</span></label>
+<label class="choix"><input type="radio" name="pole" value="3"><span>Comptabilité, Fiscalité &amp; Entrepreneuriat</span></label>
+<label class="choix"><input type="radio" name="pole" value="4"><span>Project &amp; Facility Management</span></label>
+<label class="choix"><input type="radio" name="pole" value="5"><span>Image &amp; Créativité</span></label>
+<label class="choix"><input type="radio" name="pole" value="6"><span>Innovation &amp; Intelligence Artificielle</span></label>
+<label class="choix"><input type="radio" name="pole" value="autre" checked><span>Je ne sais pas encore</span></label>
+      </div>
+    </fieldset>
+    <div class="champs-duo">
+      <label class="champ">Prénom et nom
+        <input type="text" name="nom" autocomplete="name" required>
+      </label>
+      <label class="champ">E-mail
+        <input type="email" name="email" autocomplete="email" required>
+      </label>
+    </div>
+    <label class="champ">Votre activité <span class="champ__aide">(facultatif)</span>
+      <input type="text" name="activite" autocomplete="organization-title">
+    </label>
+    <label class="champ">Décrivez votre besoin (quoi, pour quand, en quelle quantité)
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+    <div class="formulaire__pied">
+      <p class="formulaire__note">Vos données servent uniquement à vous recontacter. <a href="../confidentialite/">Confidentialité</a></p>
+      <button class="bouton bouton--plein" type="submit">Demander mon devis</button>
+    </div>
+    <p class="formulaire__erreur" role="alert" hidden>L’envoi n’a pas fonctionné. Réessayez dans un instant ou écrivez-nous directement par e-mail.</p>
+  </form>
+  <div class="formulaire__merci" tabindex="-1" hidden>
+    <span class="formulaire__merci-mot">Merci.</span>
+    <h2>Votre demande est bien envoyée.</h2>
+    <p>Nous revenons vers vous sous <span class="a-completer">[À COMPLÉTER : délai de réponse]</span> pour convenir d’un rendez-vous.</p>
+    <p class="formulaire__apercu" hidden>Aperçu : le formulaire n’est pas encore relié à une boîte e-mail, rien n’a été envoyé.</p>
+    <button class="bouton bouton--trait" type="button" data-nouvelle-demande>Envoyer une autre demande</button>
   </div>
-</section>
+</div>
+  </section>
+</div>
 </main>
 
 <footer class="pied">
@@ -61,6 +107,7 @@
       <p class="pied__nom">Stell’A-cademy</p>
       <p class="pied__devise" lang="en">Exception is you</p>
       <p>Accompagnement, formation, mise en relation et solutions pratiques, en Belgique.</p>
+      <p><a href="../contact/">Prendre rendez-vous</a></p>
     </div>
 
     <nav class="pied__colonne" aria-label="Nos 6 pôles">
@@ -71,7 +118,7 @@
         <li><a href="../poles/comptabilite-fiscalite-entrepreneuriat/">Comptabilité, Fiscalité &amp; Entrepreneuriat</a></li>
         <li><a href="../poles/project-facility-management/">Project &amp; Facility Management</a></li>
         <li><a href="../poles/image-creativite/">Image &amp; Créativité</a></li>
-        <li><a href="../poles/innovation-intelligence-artificielle/">Innovation &amp; Intelligence Artificielle (IA)</a></li>
+        <li><a href="../poles/innovation-intelligence-artificielle/">Innovation &amp; Intelligence Artificielle</a></li>
       </ul>
     </nav>
 

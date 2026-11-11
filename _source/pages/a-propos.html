@@ -1,18 +1,74 @@
 chemin: a-propos/
 titre: À propos — Stell’A-cademy
-description: Mission, valeurs et approche de Stell’A-cademy.
+description: L’histoire, les valeurs et l’approche de Stell’A-cademy, et la fondatrice qui l’anime.
 menu: a-propos
 ---
-<section class="page-titre">
+<section class="sombre hero hero--page" aria-labelledby="titre-apropos">
   <div class="conteneur">
-    <p class="surtitre">Qui sommes-nous</p>
-    <h1>À propos</h1>
-    <p class="chapeau">Mission, valeurs, publics et approche de Stell’A-cademy.</p>
+    <nav class="fil-ariane" aria-label="Fil d’Ariane">
+      <ol>
+        <li><a href="{{racine}}">Accueil</a></li>
+        <li aria-current="page">À propos</li>
+      </ol>
+    </nav>
+    <div class="hero__grille">
+      <div class="hero__texte">
+        <p class="surtitre">Qui sommes-nous</p>
+        <h1 id="titre-apropos" class="grand"><span lang="en">Exception</span><br><em lang="en">is you.</em></h1>
+        <p class="chapeau">Stell’A-cademy réunit accompagnement, formation, mise en relation et solutions pratiques en six pôles, pour aider chacun à avancer avec méthode.</p>
+      </div>
+      {{photo:10 photo--portrait hero}}
+    </div>
   </div>
 </section>
 
-<section class="bloc">
+<section class="bloc" aria-labelledby="titre-histoire">
   <div class="conteneur">
-    <p class="en-preparation">Page en préparation : elle sera construite à l’étape 3.</p>
+    <div class="duo">
+      <div class="empile">
+        <p class="surtitre">L’histoire</p>
+        <h2 id="titre-histoire">Pourquoi <em>Stell’A-cademy.</em></h2>
+      </div>
+      <div class="empile texte-2">
+        <p>[[votre histoire : d’où vient l’idée de Stell’A-cademy, votre parcours, ce qui vous a donné envie de la créer]]</p>
+        <p>[[le sens de la devise « Exception is you », en une ou deux phrases]]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloc beige" aria-labelledby="titre-valeurs">
+  <div class="conteneur">
+    <h2 id="titre-valeurs">Nos <em>valeurs.</em></h2>
+    <div class="colonnes">
+      <div class="filet"><strong>[[valeur 1]]</strong><p>[[une phrase pour l’expliquer]]</p></div>
+      <div class="filet"><strong>[[valeur 2]]</strong><p>[[une phrase pour l’expliquer]]</p></div>
+      <div class="filet"><strong>[[valeur 3]]</strong><p>[[une phrase pour l’expliquer]]</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" aria-labelledby="titre-publics">
+  <div class="conteneur">
+    <div class="tete">
+      <h2 id="titre-publics">Pour <em>qui&nbsp;?</em></h2>
+      <p>Un seul interlocuteur, des pôles qui se parlent et un réseau activé.</p>
+    </div>
+    <div class="colonnes colonnes--serrees">
+      <div class="filet"><strong>Les particuliers</strong></div>
+      <div class="filet"><strong>Les élèves et étudiants</strong></div>
+      <div class="filet"><strong>Les indépendants</strong></div>
+      <div class="filet"><strong>Les organisations</strong></div>
+    </div>
+  </div>
+</section>
+
+<section class="sombre appel" aria-labelledby="titre-appel">
+  <div class="conteneur">
+    <h2 id="titre-appel">Faisons<br><em>connaissance.</em></h2>
+    <div class="actions">
+      <a class="bouton bouton--nude" href="{{racine}}consultation-decouverte/">Réserver une consultation</a>
+      <a class="bouton bouton--trait" href="{{racine}}contact/">Nous écrire</a>
+    </div>
   </div>
 </section>

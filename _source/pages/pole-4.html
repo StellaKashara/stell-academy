@@ -3,16 +3,81 @@ titre: Project & Facility Management — Stell’A-cademy
 description: Pôle 4 de Stell’A-cademy : gestion de projets, organisation interne, digitalisation et facility management.
 menu: poles
 ---
-<section class="page-titre">
+<section class="sombre hero hero--page" aria-labelledby="titre-pole">
   <div class="conteneur">
-    <p class="surtitre">Pôle 4</p>
-    <h1>Project &amp; Facility Management</h1>
-    <p class="chapeau">Planifier, coordonner et simplifier les activités, les projets et l’organisation quotidienne.</p>
+    <nav class="fil-ariane" aria-label="Fil d’Ariane">
+      <ol>
+        <li><a href="{{racine}}">Accueil</a></li>
+        <li><a href="{{racine}}poles/">Nos 6 pôles</a></li>
+        <li aria-current="page">Project &amp; Facility Management</li>
+      </ol>
+    </nav>
+    <div class="hero__grille hero__grille--bas">
+      <div class="hero__texte">
+        <p class="surtitre">Pôle 04</p>
+        <h1 id="titre-pole">Project &amp; Facility Management</h1>
+        <p class="chapeau">Planifier, coordonner et simplifier les activités, les projets et l’organisation quotidienne.</p>
+        <div class="actions">
+          <a class="bouton bouton--nude" href="#exemple">Voir un exemple</a>
+          <a class="bouton bouton--trait" href="{{racine}}contact/?pole=4">Prendre rendez-vous</a>
+        </div>
+      </div>
+      {{photo:03 photo--haute hero}}
+    </div>
   </div>
 </section>
 
-<section class="bloc">
+<section class="bloc" aria-labelledby="titre-offres">
   <div class="conteneur">
-    <p class="en-preparation">Page en préparation : elle sera construite à l’étape 2.</p>
+    <h2 id="titre-offres">Planifier, coordonner, <em>simplifier.</em></h2>
+    <div class="colonnes colonnes--serrees">
+      <article class="filet">
+        <span class="lettre">a.</span>
+        <h3>Gestion de projets</h3>
+        <p>Planification, coordination et suivi de vos projets, du lancement jusqu’au résultat.</p>
+        <p class="prix">[[durée et prix, ou « sur devis »]]</p>
+      </article>
+      <article class="filet">
+        <span class="lettre">b.</span>
+        <h3>Organisation interne</h3>
+        <p>Des outils et des habitudes simples pour organiser le quotidien de votre activité.</p>
+        <p class="prix">[[durée et prix, ou « sur devis »]]</p>
+      </article>
+      <article class="filet">
+        <span class="lettre">c.</span>
+        <h3>Digitalisation &amp; facility management</h3>
+        <p>Formulaire professionnel, agenda de réservation, tableaux de suivi et rappels, pour une organisation qui tourne toute seule.</p>
+        <p class="prix">À l’unité ou en pack · [[prix]]</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="bloc beige" id="exemple" aria-labelledby="titre-exemple">
+  <div class="conteneur">
+    <div class="offre">
+      {{photo:12}}
+      <div class="offre__texte">
+        <p class="surtitre">Exemple</p>
+        <h2 id="titre-exemple">Les demandes arrivent <em>au bon endroit.</em></h2>
+        <p class="citation">Une coiffeuse reçoit par un simple lien les demandes de devis de ses clientes.</p>
+        <p class="texte-2">Formulaire professionnel, agenda de réservation, tableaux de suivi et rappels&nbsp;: à l’unité ou en pack.</p>
+        <a class="lien-fleche" href="{{racine}}services-phares/#digitalisation">Le service phare Digitalisation &amp; Organisation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" aria-labelledby="titre-autres">
+  <div class="conteneur">
+    <h2 class="surtitre" id="titre-autres">Les autres pôles</h2>
+    {{autres-poles:4}}
+  </div>
+</section>
+
+<section class="sombre appel" aria-labelledby="titre-appel">
+  <div class="conteneur">
+    <h2 id="titre-appel">Un projet<br><em>à organiser&nbsp;?</em></h2>
+    <a class="bouton bouton--nude" href="{{racine}}demander-un-devis/?pole=4">Demander un devis</a>
   </div>
 </section>

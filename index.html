@@ -5,9 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Stell’A-cademy — Accompagnement, formation et solutions pratiques en Belgique</title>
 <meta name="description" content="Stell’A-cademy réunit six pôles d’accompagnement, de formation, de mise en relation et de solutions pratiques pour les particuliers, étudiants, indépendants et organisations en Belgique.">
-<meta name="theme-color" content="#F7F1EB">
+<meta name="theme-color" content="#2E211A">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_BE">
+<meta property="og:site_name" content="Stell’A-cademy">
+<meta property="og:title" content="Stell’A-cademy — Accompagnement, formation et solutions pratiques en Belgique">
+<meta property="og:description" content="Stell’A-cademy réunit six pôles d’accompagnement, de formation, de mise en relation et de solutions pratiques pour les particuliers, étudiants, indépendants et organisations en Belgique.">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="./assets/fonts/bodoni-moda-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="./assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="./assets/css/style.css">
 <script>document.documentElement.classList.add("js");</script>
 <script src="./assets/js/site.js" defer></script>
@@ -32,149 +38,206 @@
         <li><a href="./services-phares/">Services phares</a></li>
         <li><a href="./consultation-decouverte/">Consultation découverte</a></li>
         <li><a href="./a-propos/">À propos</a></li>
-        <li><a href="./contact/">Contact</a></li>
       </ul>
-      <a class="bouton bouton--plein menu__devis" href="./demander-un-devis/">Demander un devis</a>
+      <a class="bouton bouton--nude menu__contact" href="./contact/">Contact</a>
     </nav>
   </div>
 </header>
 
 <main id="contenu">
-<section class="ouverture">
-  <div class="conteneur ouverture__grille">
-    <p class="ouverture__devise" lang="en" aria-label="Exception is you">Exception <em>is&nbsp;you.</em></p>
-    <div class="ouverture__texte">
-      <h1>Accompagnement, formation, mise en relation et solutions pratiques, réunis en six pôles.</h1>
-      <p class="chapeau">Pour les particuliers, les élèves et étudiants, les indépendants et les organisations qui veulent avancer avec méthode.</p>
+<section class="sombre hero" aria-labelledby="titre-accueil">
+  <div class="conteneur hero__grille">
+    <div class="hero__texte">
+      <p class="surtitre" lang="en">Exception is you</p>
+      <h1 id="titre-accueil">Une académie,<br><em>six pôles</em><br>pour avancer.</h1>
+      <p class="chapeau">Accompagnement, formation, mise en relation et solutions pratiques, au même endroit. Pour les particuliers, les élèves et étudiants, les indépendants et les organisations qui veulent avancer avec méthode.</p>
       <div class="actions">
-        <a class="bouton bouton--plein" href="./poles/">Découvrir nos services</a>
+        <a class="bouton bouton--nude" href="#poles">Explorer les pôles</a>
         <a class="bouton bouton--trait" href="./consultation-decouverte/">Réserver une consultation découverte</a>
       </div>
       <p class="note">Consultation découverte de 30 minutes, gratuite, en visio ou au lieu de rendez-vous.</p>
     </div>
+    <div class="mosaique">
+      <div class="photo photo--attente " style="--ton:#D9B9A0" role="img" aria-label="Une femme souriante travaille sur son ordinateur près d’une fenêtre, dans un intérieur crème et bois clair." data-fichier="images/01-entrepreneure-bureau.webp"><span class="photo__etiquette" aria-hidden="true">Photo 01 · Entrepreneure à son bureau, lumière du matin</span></div>
+      <div class="photo photo--attente " style="--ton:#B89A82" role="img" aria-label="Une intervenante s’adresse à un petit public, vue de trois-quarts." data-fichier="images/06-prise-de-parole.webp"><span class="photo__etiquette" aria-hidden="true">Photo 06 · Prise de parole</span></div>
+      <div class="photo photo--attente " style="--ton:#CFB59E" role="img" aria-label="Tasse en céramique, fleurs séchées et livres empilés sur un bureau." data-fichier="images/12-details-bureau.webp"><span class="photo__etiquette" aria-hidden="true">Photo 12 · Détails de bureau</span></div>
+    </div>
   </div>
 </section>
 
-<section class="bloc" aria-labelledby="titre-poles">
+<section class="bloc" id="poles" aria-labelledby="titre-poles">
   <div class="conteneur">
-    <div class="bloc__tete">
-      <p class="surtitre">Ce que nous faisons</p>
-      <h2 id="titre-poles">Nos 6 pôles</h2>
-      <p>Chaque pôle regroupe des prestations précises. Choisissez celui qui correspond à votre besoin, ou réservez une consultation découverte pour être orienté.</p>
+    <div class="tete">
+      <h2 id="titre-poles">Choisissez <em>votre pôle.</em></h2>
+      <p>Choisissez un pôle pour découvrir ce qu’il propose. Chaque pôle a sa page et ses offres. Vous hésitez&nbsp;? La consultation découverte sert à vous orienter.</p>
     </div>
-    <ol class="poles">
-      <li class="pole">
-        <span class="pole__numero">Pôle 1</span>
-        <h3><a href="./poles/formation-coaching/">Formation &amp; Coaching</a></h3>
+    <ul class="selecteur" data-selecteur aria-label="Les 6 pôles">
+      <li><button class="selecteur__bouton" type="button" aria-pressed="true" aria-controls="panneau-1">
+        <span class="selecteur__numero">01</span>
+        <span class="selecteur__nom">Formation &amp; Coaching</span>
+      </button></li>
+      <li><button class="selecteur__bouton" type="button" aria-pressed="false" aria-controls="panneau-2">
+        <span class="selecteur__numero">02</span>
+        <span class="selecteur__nom">Réseautage &amp; Mise en relation</span>
+      </button></li>
+      <li><button class="selecteur__bouton" type="button" aria-pressed="false" aria-controls="panneau-3">
+        <span class="selecteur__numero">03</span>
+        <span class="selecteur__nom">Comptabilité, Fiscalité &amp; Entrepreneuriat</span>
+      </button></li>
+      <li><button class="selecteur__bouton" type="button" aria-pressed="false" aria-controls="panneau-4">
+        <span class="selecteur__numero">04</span>
+        <span class="selecteur__nom">Project &amp; Facility Management</span>
+      </button></li>
+      <li><button class="selecteur__bouton" type="button" aria-pressed="false" aria-controls="panneau-5">
+        <span class="selecteur__numero">05</span>
+        <span class="selecteur__nom">Image &amp; Créativité</span>
+      </button></li>
+      <li><button class="selecteur__bouton" type="button" aria-pressed="false" aria-controls="panneau-6">
+        <span class="selecteur__numero">06</span>
+        <span class="selecteur__nom">Innovation &amp; Intelligence Artificielle</span>
+      </button></li>
+    </ul>
+    <div>
+    <div class="panneau" id="panneau-1" style="--fond:#E8DCCB" role="region" aria-label="Pôle 1 : Formation &amp; Coaching">
+      <div class="photo photo--attente " style="--ton:#E8DCCB" role="img" aria-label="Quatre à six personnes autour d’une grande table, carnets ouverts, ambiance studieuse et détendue." data-fichier="images/02-atelier-groupe.webp"><span class="photo__etiquette" aria-hidden="true">Photo 02 · Atelier en petit groupe</span></div>
+      <div class="panneau__texte">
+        <p class="surtitre">Pôle 01</p>
+        <h3>Formation &amp; Coaching</h3>
         <p>Transmettre des compétences, soutenir les parcours scolaires et professionnels, développer l’autonomie.</p>
-      </li>
-      <li class="pole">
-        <span class="pole__numero">Pôle 2</span>
-        <h3><a href="./poles/reseautage-mise-en-relation/">Réseautage &amp; Mise en relation</a></h3>
+        <ul class="liste-filets">
+          <li>Formations et ateliers</li>
+          <li>Coaching</li>
+          <li>Étudiants-Profs : soutien scolaire et examens</li>
+        </ul>
+        <a class="bouton bouton--plein" href="./poles/formation-coaching/">Découvrir le pôle<span class="visuellement-cache"> Formation &amp; Coaching</span></a>
+      </div>
+    </div>
+    <div class="panneau" id="panneau-2" style="--fond:#EADFD0" role="region" aria-label="Pôle 2 : Réseautage &amp; Mise en relation">
+      <div class="photo photo--attente " style="--ton:#A88B74" role="img" aria-label="Échange chaleureux lors d’un petit événement professionnel, arrière-plan flou." data-fichier="images/04-mise-en-relation.webp"><span class="photo__etiquette" aria-hidden="true">Photo 04 · Mise en relation</span></div>
+      <div class="panneau__texte">
+        <p class="surtitre">Pôle 02</p>
+        <h3>Réseautage &amp; Mise en relation</h3>
         <p>Créer des connexions utiles entre talents, professionnels, entrepreneurs et partenaires.</p>
-      </li>
-      <li class="pole">
-        <span class="pole__numero">Pôle 3</span>
-        <h3><a href="./poles/comptabilite-fiscalite-entrepreneuriat/">Comptabilité, Fiscalité &amp; Entrepreneuriat</a></h3>
+        <ul class="liste-filets">
+          <li>Réseau professionnel</li>
+          <li>Mise en relation</li>
+          <li>Animation et partenariats</li>
+        </ul>
+        <a class="bouton bouton--plein" href="./poles/reseautage-mise-en-relation/">Découvrir le pôle<span class="visuellement-cache"> Réseautage &amp; Mise en relation</span></a>
+      </div>
+    </div>
+    <div class="panneau" id="panneau-3" style="--fond:#E3CDB9" role="region" aria-label="Pôle 3 : Comptabilité, Fiscalité &amp; Entrepreneuriat">
+      <div class="photo photo--attente " style="--ton:#DCC6B2" role="img" aria-label="Des mains écrivent dans un agenda sur papier crème, en lumière rasante." data-fichier="images/07-mains-planning.webp"><span class="photo__etiquette" aria-hidden="true">Photo 07 · Mains qui planifient</span></div>
+      <div class="panneau__texte">
+        <p class="surtitre">Pôle 03</p>
+        <h3>Comptabilité, Fiscalité &amp; Entrepreneuriat</h3>
         <p>Le soutien administratif et documentaire des indépendants, en lien avec leur comptable.</p>
-      </li>
-      <li class="pole">
-        <span class="pole__numero">Pôle 4</span>
-        <h3><a href="./poles/project-facility-management/">Project &amp; Facility Management</a></h3>
+        <ul class="liste-filets">
+          <li>Classement et courriers</li>
+          <li>Dossiers et échéances</li>
+          <li>Pièces préparées pour votre comptable</li>
+        </ul>
+        <a class="bouton bouton--plein" href="./poles/comptabilite-fiscalite-entrepreneuriat/">Découvrir le pôle<span class="visuellement-cache"> Comptabilité, Fiscalité &amp; Entrepreneuriat</span></a>
+      </div>
+    </div>
+    <div class="panneau" id="panneau-4" style="--fond:#E8DCCB" role="region" aria-label="Pôle 4 : Project &amp; Facility Management">
+      <div class="photo photo--attente " style="--ton:#C9AE97" role="img" aria-label="Deux personnes échangent autour d’un café, cadrage serré sur les mains et les tasses." data-fichier="images/03-tete-a-tete-cafe.webp"><span class="photo__etiquette" aria-hidden="true">Photo 03 · Tête-à-tête autour d’un café</span></div>
+      <div class="panneau__texte">
+        <p class="surtitre">Pôle 04</p>
+        <h3>Project &amp; Facility Management</h3>
         <p>Planifier, coordonner et simplifier les activités, les projets et l’organisation quotidienne.</p>
-      </li>
-      <li class="pole">
-        <span class="pole__numero">Pôle 5</span>
-        <h3><a href="./poles/image-creativite/">Image &amp; Créativité</a></h3>
+        <ul class="liste-filets">
+          <li>Gestion de projets</li>
+          <li>Organisation interne</li>
+          <li>Digitalisation et facility management</li>
+        </ul>
+        <a class="bouton bouton--plein" href="./poles/project-facility-management/">Découvrir le pôle<span class="visuellement-cache"> Project &amp; Facility Management</span></a>
+      </div>
+    </div>
+    <div class="panneau" id="panneau-5" style="--fond:#EADFD0" role="region" aria-label="Pôle 5 : Image &amp; Créativité">
+      <div class="photo photo--attente " style="--ton:#F1E7DA" role="img" aria-label="Vue du dessus d’un carnet, d’un smartphone, d’un nuancier beige et d’un stylo doré sur fond de lin." data-fichier="images/05-flat-lay-communication.webp"><span class="photo__etiquette" aria-hidden="true">Photo 05 · Communication</span></div>
+      <div class="panneau__texte">
+        <p class="surtitre">Pôle 05</p>
+        <h3>Image &amp; Créativité</h3>
         <p>Valoriser les projets et les entreprises grâce à une communication claire et professionnelle.</p>
-      </li>
-      <li class="pole">
-        <span class="pole__numero">Pôle 6</span>
-        <h3><a href="./poles/innovation-intelligence-artificielle/">Innovation &amp; Intelligence Artificielle (IA)</a></h3>
+        <ul class="liste-filets">
+          <li>Visuels pour les réseaux sociaux</li>
+          <li>Présentations, brochures et catalogues</li>
+          <li>Optimisation LinkedIn et mini-site vitrine</li>
+        </ul>
+        <a class="bouton bouton--plein" href="./poles/image-creativite/">Découvrir le pôle<span class="visuellement-cache"> Image &amp; Créativité</span></a>
+      </div>
+    </div>
+    <div class="panneau" id="panneau-6" style="--fond:#D9B9A0" role="region" aria-label="Pôle 6 : Innovation &amp; Intelligence Artificielle">
+      <div class="photo photo--attente " style="--ton:#E5D3C1" role="img" aria-label="Ordinateur portable ouvert, tasse et documents posés sur un bureau épuré." data-fichier="images/08-ordinateur-strategie.webp"><span class="photo__etiquette" aria-hidden="true">Photo 08 · Ordinateur et stratégie</span></div>
+      <div class="panneau__texte">
+        <p class="surtitre">Pôle 06</p>
+        <h3>Innovation &amp; Intelligence Artificielle</h3>
         <p>Rendre les outils numériques et l’IA accessibles et utiles au quotidien.</p>
-      </li>
-    </ol>
+        <ul class="liste-filets">
+          <li>Découverte de l’IA</li>
+          <li>Automatisation</li>
+          <li>Innovation digitale</li>
+        </ul>
+        <a class="bouton bouton--plein" href="./poles/innovation-intelligence-artificielle/">Découvrir le pôle<span class="visuellement-cache"> Innovation &amp; Intelligence Artificielle</span></a>
+      </div>
+    </div>
+    </div>
   </div>
 </section>
 
-<section class="bloc bloc--lin" aria-labelledby="titre-phares">
+<section class="bloc beige" aria-labelledby="titre-phares">
   <div class="conteneur">
-    <div class="bloc__tete">
-      <p class="surtitre">Services phares</p>
-      <h2 id="titre-phares">Trois offres pour commencer</h2>
+    <div class="tete">
+      <div class="empile">
+        <p class="surtitre">Services phares</p>
+        <h2 id="titre-phares">Trois offres <em>pour commencer.</em></h2>
+      </div>
+      <a class="lien-fleche" href="./services-phares/">Voir les services phares</a>
     </div>
-    <div class="phares">
-      <article class="phare">
-        <p class="phare__pole">Pôle 3</p>
+    <div class="colonnes">
+      <article class="filet">
+        <span class="lettre">Pôle 3</span>
         <h3>Le bras droit administratif des indépendants</h3>
         <p>Classement, courriers, dossiers, échéances et préparation des pièces pour votre comptable. Une aide ponctuelle d’abord, puis un suivi mensuel selon le volume de vos documents.</p>
-        <p class="phare__cadre">Votre comptable reste responsable de la comptabilité, des déclarations et des conseils fiscaux.</p>
-        <a class="lien-fleche" href="./demander-un-devis/">Demander un devis</a>
+        <a class="lien-fleche" href="./services-phares/#bras-droit">En savoir plus</a>
       </article>
-      <article class="phare">
-        <p class="phare__pole">Pôle 4</p>
+      <article class="filet">
+        <span class="lettre">Pôle 4</span>
         <h3>Digitalisation &amp; Organisation des entreprises</h3>
         <p>Formulaire professionnel, agenda de réservation, tableaux de suivi et rappels, pour que les demandes de vos clients arrivent au bon endroit. À l’unité ou en pack.</p>
-        <p class="phare__exemple">Exemple : une coiffeuse reçoit par un simple lien les demandes de devis de ses clientes.</p>
-        <a class="lien-fleche" href="./demander-un-devis/">Demander un devis</a>
+        <a class="lien-fleche" href="./services-phares/#digitalisation">En savoir plus</a>
       </article>
-      <article class="phare">
-        <p class="phare__pole">Pôles 1 et 2</p>
-        <h3>Étudiants-Profs <span class="phare__signature">by Stell’A-cademy</span></h3>
+      <article class="filet">
+        <span class="lettre">Pôles 1 et 2</span>
+        <h3>Étudiants-Profs <span class="signature">by Stell’A-cademy</span></h3>
         <p>La mise en relation entre familles et étudiants-profs, pour le soutien scolaire et la préparation aux examens. Premier échange gratuit, premier cours à l’unité, frais présentés clairement.</p>
-        <a class="lien-fleche" href="./services-phares/#etudiants-profs">En savoir plus sur Étudiants-Profs</a>
+        <a class="lien-fleche" href="./services-phares/#etudiants-profs">En savoir plus</a>
       </article>
     </div>
   </div>
 </section>
 
-<section class="bloc" aria-labelledby="titre-carte">
-  <div class="conteneur carte">
-    <div class="bloc__tete">
-      <p class="surtitre">À la carte</p>
-      <h2 id="titre-carte">Des prix de départ clairs</h2>
-      <p>Le prix exact dépend de votre demande. Toutes les autres prestations sont sur devis.</p>
-      <a class="lien-fleche" href="./poles/image-creativite/">Voir le pôle Image &amp; Créativité</a>
-    </div>
-    <div class="tarifs">
-      <dl class="tarifs__liste">
-        <div><dt>Visuels pour les réseaux sociaux</dt><dd><span class="tarifs__mention">à partir de</span> 129&nbsp;€</dd></div>
-        <div><dt>Présentation PowerPoint</dt><dd><span class="tarifs__mention">à partir de</span> 149&nbsp;€</dd></div>
-        <div><dt>Brochure ou catalogue</dt><dd><span class="tarifs__mention">à partir de</span> 149&nbsp;€</dd></div>
-        <div><dt>Optimisation LinkedIn</dt><dd><span class="tarifs__mention">à partir de</span> 79&nbsp;€</dd></div>
-        <div><dt>Mini-site vitrine</dt><dd>sur devis</dd></div>
-      </dl>
-      <p class="tarifs__tva"><span class="a-completer">[À COMPLÉTER : mention TVA : « TVA comprise » ou « hors TVA »]</span></p>
+<section class="bloc" aria-labelledby="titre-pourquoi">
+  <div class="conteneur">
+    <h2 id="titre-pourquoi" style="max-width:780px">Pourquoi un <em>guichet unique</em>&nbsp;?</h2>
+    <div class="colonnes">
+      <div class="filet"><strong>Un seul interlocuteur</strong><p>Plus besoin de multiplier les prestataires&nbsp;: nous coordonnons pour vous.</p></div>
+      <div class="filet"><strong>Des pôles qui se parlent</strong><p>La formation, l’organisation, l’administratif et la communication avancent ensemble.</p></div>
+      <div class="filet"><strong>Un réseau activé</strong><p>Talents, professionnels et partenaires&nbsp;: nous ouvrons les bonnes portes.</p></div>
     </div>
   </div>
 </section>
 
-<section class="bloc bloc--chocolat" aria-labelledby="titre-consultation">
-  <div class="conteneur appel">
+<section class="sombre appel" aria-labelledby="titre-appel">
+  <div class="conteneur">
     <div>
-      <p class="surtitre">Consultation découverte</p>
-      <h2 id="titre-consultation">30 minutes pour faire le point, gratuitement.</h2>
+      <h2 id="titre-appel">Construisons<br><em>la suite ensemble.</em></h2>
+      <p>30 minutes pour faire le point, gratuitement, en visio (Google Meet) ou au lieu de rendez-vous. Familles&nbsp;: le premier échange Étudiants-Profs se réserve au même endroit.</p>
     </div>
-    <div class="appel__texte">
-      <p>Présentez votre besoin et repartez avec une orientation claire vers le bon pôle. En visio (Google Meet) ou au lieu de rendez-vous.</p>
-      <p>Familles : le premier échange Étudiants-Profs se réserve au même endroit.</p>
-      <a class="bouton bouton--clair" href="./consultation-decouverte/">Réserver une consultation découverte</a>
-    </div>
-  </div>
-</section>
-
-<section class="bloc" aria-labelledby="titre-contact">
-  <div class="conteneur appel">
-    <div>
-      <p class="surtitre">Contact</p>
-      <h2 id="titre-contact">Une question, un projet&nbsp;?</h2>
-    </div>
-    <div class="appel__texte">
-      <p>Écrivez-nous pour toute question, ou décrivez votre besoin pour recevoir un devis.</p>
-      <div class="actions">
-        <a class="bouton bouton--plein" href="./demander-un-devis/">Demander un devis</a>
-        <a class="bouton bouton--trait" href="./contact/">Nous contacter</a>
-      </div>
+    <div class="actions">
+      <a class="bouton bouton--nude" href="./consultation-decouverte/">Réserver une consultation</a>
+      <a class="bouton bouton--trait" href="./demander-un-devis/">Demander un devis</a>
     </div>
   </div>
 </section>
@@ -186,6 +249,7 @@
       <p class="pied__nom">Stell’A-cademy</p>
       <p class="pied__devise" lang="en">Exception is you</p>
       <p>Accompagnement, formation, mise en relation et solutions pratiques, en Belgique.</p>
+      <p><a href="./contact/">Prendre rendez-vous</a></p>
     </div>
 
     <nav class="pied__colonne" aria-label="Nos 6 pôles">
@@ -196,7 +260,7 @@
         <li><a href="./poles/comptabilite-fiscalite-entrepreneuriat/">Comptabilité, Fiscalité &amp; Entrepreneuriat</a></li>
         <li><a href="./poles/project-facility-management/">Project &amp; Facility Management</a></li>
         <li><a href="./poles/image-creativite/">Image &amp; Créativité</a></li>
-        <li><a href="./poles/innovation-intelligence-artificielle/">Innovation &amp; Intelligence Artificielle (IA)</a></li>
+        <li><a href="./poles/innovation-intelligence-artificielle/">Innovation &amp; Intelligence Artificielle</a></li>
       </ul>
     </nav>
 

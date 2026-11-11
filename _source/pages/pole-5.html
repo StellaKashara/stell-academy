@@ -3,16 +3,88 @@ titre: Image & Créativité — Stell’A-cademy
 description: Pôle 5 de Stell’A-cademy : communication visuelle, image professionnelle et présence digitale.
 menu: poles
 ---
-<section class="page-titre">
+<section class="sombre hero hero--page" aria-labelledby="titre-pole">
   <div class="conteneur">
-    <p class="surtitre">Pôle 5</p>
-    <h1>Image &amp; Créativité</h1>
-    <p class="chapeau">Valoriser les projets et les entreprises grâce à une communication claire et professionnelle.</p>
+    <nav class="fil-ariane" aria-label="Fil d’Ariane">
+      <ol>
+        <li><a href="{{racine}}">Accueil</a></li>
+        <li><a href="{{racine}}poles/">Nos 6 pôles</a></li>
+        <li aria-current="page">Image &amp; Créativité</li>
+      </ol>
+    </nav>
+    <div class="hero__grille hero__grille--bas">
+      <div class="hero__texte">
+        <p class="surtitre">Pôle 05</p>
+        <h1 id="titre-pole">Image &amp; Créativité</h1>
+        <p class="chapeau">Valoriser les projets et les entreprises grâce à une communication claire et professionnelle.</p>
+        <div class="actions">
+          <a class="bouton bouton--nude" href="#tarifs">Voir les tarifs</a>
+          <a class="bouton bouton--trait" href="{{racine}}contact/?pole=5">Prendre rendez-vous</a>
+        </div>
+      </div>
+      {{photo:05 photo--haute hero}}
+    </div>
   </div>
 </section>
 
-<section class="bloc">
+<section class="bloc" aria-labelledby="titre-offres">
   <div class="conteneur">
-    <p class="en-preparation">Page en préparation : elle sera construite à l’étape 2.</p>
+    <h2 id="titre-offres">Une image claire <em>et professionnelle.</em></h2>
+    <div class="colonnes colonnes--serrees">
+      <article class="filet">
+        <span class="lettre">a.</span>
+        <h3>Visuels pour les réseaux sociaux</h3>
+        <p>Des visuels cohérents avec votre image, prêts à publier.</p>
+        <p class="prix">À partir de 129&nbsp;€</p>
+      </article>
+      <article class="filet">
+        <span class="lettre">b.</span>
+        <h3>Présentations et brochures</h3>
+        <p>Présentation PowerPoint, brochure ou catalogue&nbsp;: des documents clairs qui donnent envie.</p>
+        <p class="prix">À partir de 149&nbsp;€</p>
+      </article>
+      <article class="filet">
+        <span class="lettre">c.</span>
+        <h3>Présence en ligne</h3>
+        <p>Un profil LinkedIn optimisé et, si besoin, un mini-site vitrine.</p>
+        <p class="prix">LinkedIn à partir de 79&nbsp;€ · mini-site sur devis</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="bloc beige" id="tarifs" aria-labelledby="titre-tarifs">
+  <div class="conteneur">
+    <div class="duo">
+      <div class="empile">
+        <p class="surtitre">À la carte</p>
+        <h2 id="titre-tarifs">Des prix de départ <em>clairs.</em></h2>
+        <p class="texte-2">Le prix exact dépend de votre demande. Toutes les autres prestations sont sur devis.</p>
+      </div>
+      <div class="tarifs">
+        <dl>
+          <div><dt>Visuels pour les réseaux sociaux</dt><dd><span class="tarifs__mention">à partir de</span>129&nbsp;€</dd></div>
+          <div><dt>Présentation PowerPoint</dt><dd><span class="tarifs__mention">à partir de</span>149&nbsp;€</dd></div>
+          <div><dt>Brochure ou catalogue</dt><dd><span class="tarifs__mention">à partir de</span>149&nbsp;€</dd></div>
+          <div><dt>Optimisation LinkedIn</dt><dd><span class="tarifs__mention">à partir de</span>79&nbsp;€</dd></div>
+          <div><dt>Mini-site vitrine</dt><dd>sur devis</dd></div>
+        </dl>
+        <p class="note">[[mention TVA : « TVA comprise » ou « hors TVA »]]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" aria-labelledby="titre-autres">
+  <div class="conteneur">
+    <h2 class="surtitre" id="titre-autres">Les autres pôles</h2>
+    {{autres-poles:5}}
+  </div>
+</section>
+
+<section class="sombre appel" aria-labelledby="titre-appel">
+  <div class="conteneur">
+    <h2 id="titre-appel">Donnons de l’allure<br><em>à votre image.</em></h2>
+    <a class="bouton bouton--nude" href="{{racine}}demander-un-devis/?pole=5">Demander un devis</a>
   </div>
 </section>

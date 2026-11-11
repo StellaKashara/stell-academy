@@ -4,10 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Consultation découverte gratuite — Stell’A-cademy</title>
-<meta name="description" content="Réservez une consultation découverte gratuite de 30 minutes avec Stell’A-cademy.">
-<meta name="theme-color" content="#F7F1EB">
+<meta name="description" content="Réservez une consultation découverte gratuite de 30 minutes avec Stell’A-cademy, en visio ou au lieu de rendez-vous.">
+<meta name="theme-color" content="#2E211A">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_BE">
+<meta property="og:site_name" content="Stell’A-cademy">
+<meta property="og:title" content="Consultation découverte gratuite — Stell’A-cademy">
+<meta property="og:description" content="Réservez une consultation découverte gratuite de 30 minutes avec Stell’A-cademy, en visio ou au lieu de rendez-vous.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="../assets/fonts/bodoni-moda-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="../assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/css/style.css">
 <script>document.documentElement.classList.add("js");</script>
 <script src="../assets/js/site.js" defer></script>
@@ -32,25 +38,96 @@
         <li><a href="../services-phares/">Services phares</a></li>
         <li><a href="../consultation-decouverte/" aria-current="page">Consultation découverte</a></li>
         <li><a href="../a-propos/">À propos</a></li>
-        <li><a href="../contact/">Contact</a></li>
       </ul>
-      <a class="bouton bouton--plein menu__devis" href="../demander-un-devis/">Demander un devis</a>
+      <a class="bouton bouton--nude menu__contact" href="../contact/">Contact</a>
     </nav>
   </div>
 </header>
 
 <main id="contenu">
-<section class="page-titre">
+<section class="sombre hero hero--page" aria-labelledby="titre-consultation">
   <div class="conteneur">
-    <p class="surtitre">30 minutes, gratuite</p>
-    <h1>Consultation découverte gratuite</h1>
-    
+    <nav class="fil-ariane" aria-label="Fil d’Ariane">
+      <ol>
+        <li><a href="../">Accueil</a></li>
+        <li aria-current="page">Consultation découverte</li>
+      </ol>
+    </nav>
+    <div class="hero__grille">
+      <div class="hero__texte">
+        <p class="surtitre">30 minutes, gratuite</p>
+        <h1 id="titre-consultation">30 minutes pour <em>faire le point.</em></h1>
+        <p class="chapeau">Présentez votre besoin et repartez avec une orientation claire vers le bon pôle.</p>
+        <div class="actions">
+          <a class="bouton bouton--nude" href="#reserver">Réserver ma consultation</a>
+        </div>
+      </div>
+      <div class="photo photo--attente photo--haute" style="--ton:#C9AE97" role="img" aria-label="Deux personnes échangent autour d’un café, cadrage serré sur les mains et les tasses." data-fichier="images/03-tete-a-tete-cafe.webp"><span class="photo__etiquette" aria-hidden="true">Photo 03 · Tête-à-tête autour d’un café</span></div>
+    </div>
   </div>
 </section>
 
-<section class="bloc">
+<section class="bloc" aria-labelledby="titre-deroulement">
   <div class="conteneur">
-    <p class="en-preparation">Page en préparation : elle sera construite à l’étape 4.</p>
+    <h2 id="titre-deroulement">Comment <em>ça se passe.</em></h2>
+    <div class="colonnes">
+      <div class="filet"><strong>30 minutes, gratuites</strong><p>Un premier échange sans engagement pour comprendre votre situation.</p></div>
+      <div class="filet"><strong>En visio ou en personne</strong><p>Sur Google Meet, ou au lieu de rendez-vous&nbsp;: <span class="a-completer">[À COMPLÉTER : ville ou adresse du lieu de rendez-vous]</span>.</p></div>
+      <div class="filet"><strong>Une orientation claire</strong><p>Vous repartez en sachant quel pôle et quelle offre correspondent à votre besoin.</p></div>
+    </div>
+    <p class="texte-2">Familles&nbsp;: le premier échange Étudiants-Profs se réserve au même endroit.</p>
+  </div>
+</section>
+
+<section class="bloc beige" id="reserver" aria-labelledby="titre-reserver">
+  <div class="conteneur">
+    <div class="tete">
+      <h2 id="titre-reserver">Réserver <em>ma consultation.</em></h2>
+      <p>Indiquez vos disponibilités&nbsp;: nous vous proposons un créneau. <span class="a-completer">[À COMPLÉTER : lien vers votre agenda de réservation en ligne, si vous en utilisez un]</span></p>
+    </div>
+    <div class="formulaire-carte" data-formulaire>
+  <form class="formulaire" action="https://formspree.io/f/VOTRE-IDENTIFIANT" method="post">
+    <input type="hidden" name="_subject" value="Demande de consultation découverte">
+    <fieldset class="formulaire__poles">
+      <legend>Sur quel sujet souhaitez-vous faire le point ?</legend>
+      <div class="choix-grille">
+<label class="choix"><input type="radio" name="pole" value="1"><span>Formation &amp; Coaching</span></label>
+<label class="choix"><input type="radio" name="pole" value="2"><span>Réseautage &amp; Mise en relation</span></label>
+<label class="choix"><input type="radio" name="pole" value="3"><span>Comptabilité, Fiscalité &amp; Entrepreneuriat</span></label>
+<label class="choix"><input type="radio" name="pole" value="4"><span>Project &amp; Facility Management</span></label>
+<label class="choix"><input type="radio" name="pole" value="5"><span>Image &amp; Créativité</span></label>
+<label class="choix"><input type="radio" name="pole" value="6"><span>Innovation &amp; Intelligence Artificielle</span></label>
+<label class="choix"><input type="radio" name="pole" value="autre" checked><span>Je ne sais pas encore</span></label>
+      </div>
+    </fieldset>
+    <div class="champs-duo">
+      <label class="champ">Prénom et nom
+        <input type="text" name="nom" autocomplete="name" required>
+      </label>
+      <label class="champ">E-mail
+        <input type="email" name="email" autocomplete="email" required>
+      </label>
+    </div>
+    <label class="champ">Votre activité <span class="champ__aide">(facultatif)</span>
+      <input type="text" name="activite" autocomplete="organization-title">
+    </label>
+    <label class="champ">Vos disponibilités et ce que vous aimeriez aborder
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+    <div class="formulaire__pied">
+      <p class="formulaire__note">Vos données servent uniquement à vous recontacter. <a href="../confidentialite/">Confidentialité</a></p>
+      <button class="bouton bouton--plein" type="submit">Demander ma consultation</button>
+    </div>
+    <p class="formulaire__erreur" role="alert" hidden>L’envoi n’a pas fonctionné. Réessayez dans un instant ou écrivez-nous directement par e-mail.</p>
+  </form>
+  <div class="formulaire__merci" tabindex="-1" hidden>
+    <span class="formulaire__merci-mot">Merci.</span>
+    <h2>Votre demande est bien envoyée.</h2>
+    <p>Nous revenons vers vous sous <span class="a-completer">[À COMPLÉTER : délai de réponse]</span> pour convenir d’un rendez-vous.</p>
+    <p class="formulaire__apercu" hidden>Aperçu : le formulaire n’est pas encore relié à une boîte e-mail, rien n’a été envoyé.</p>
+    <button class="bouton bouton--trait" type="button" data-nouvelle-demande>Envoyer une autre demande</button>
+  </div>
+</div>
   </div>
 </section>
 </main>
@@ -61,6 +138,7 @@
       <p class="pied__nom">Stell’A-cademy</p>
       <p class="pied__devise" lang="en">Exception is you</p>
       <p>Accompagnement, formation, mise en relation et solutions pratiques, en Belgique.</p>
+      <p><a href="../contact/">Prendre rendez-vous</a></p>
     </div>
 
     <nav class="pied__colonne" aria-label="Nos 6 pôles">
@@ -71,7 +149,7 @@
         <li><a href="../poles/comptabilite-fiscalite-entrepreneuriat/">Comptabilité, Fiscalité &amp; Entrepreneuriat</a></li>
         <li><a href="../poles/project-facility-management/">Project &amp; Facility Management</a></li>
         <li><a href="../poles/image-creativite/">Image &amp; Créativité</a></li>
-        <li><a href="../poles/innovation-intelligence-artificielle/">Innovation &amp; Intelligence Artificielle (IA)</a></li>
+        <li><a href="../poles/innovation-intelligence-artificielle/">Innovation &amp; Intelligence Artificielle</a></li>
       </ul>
     </nav>
 

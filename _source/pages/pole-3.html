@@ -3,16 +3,95 @@ titre: Comptabilité, Fiscalité & Entrepreneuriat — Stell’A-cademy
 description: Pôle 3 de Stell’A-cademy : le bras droit administratif des indépendants.
 menu: poles
 ---
-<section class="page-titre">
+<section class="sombre hero hero--page" aria-labelledby="titre-pole">
   <div class="conteneur">
-    <p class="surtitre">Pôle 3</p>
-    <h1>Comptabilité, Fiscalité &amp; Entrepreneuriat</h1>
-    <p class="chapeau">Le soutien administratif et documentaire des indépendants, en lien avec leur comptable.</p>
+    <nav class="fil-ariane" aria-label="Fil d’Ariane">
+      <ol>
+        <li><a href="{{racine}}">Accueil</a></li>
+        <li><a href="{{racine}}poles/">Nos 6 pôles</a></li>
+        <li aria-current="page">Comptabilité, Fiscalité &amp; Entrepreneuriat</li>
+      </ol>
+    </nav>
+    <div class="hero__grille hero__grille--bas">
+      <div class="hero__texte">
+        <p class="surtitre">Pôle 03</p>
+        <h1 id="titre-pole">Comptabilité, Fiscalité &amp; Entrepreneuriat</h1>
+        <p class="chapeau">Le soutien administratif et documentaire des indépendants, en lien avec leur comptable.</p>
+        <div class="actions">
+          <a class="bouton bouton--nude" href="#qui-fait-quoi">Qui fait quoi&nbsp;?</a>
+          <a class="bouton bouton--trait" href="{{racine}}contact/?pole=3">Prendre rendez-vous</a>
+        </div>
+      </div>
+      {{photo:07 photo--haute hero}}
+    </div>
   </div>
 </section>
 
-<section class="bloc">
+<section class="bloc" aria-labelledby="titre-offres">
   <div class="conteneur">
-    <p class="en-preparation">Page en préparation : elle sera construite à l’étape 2.</p>
+    <div class="tete">
+      <h2 id="titre-offres">Votre bras droit <em>administratif.</em></h2>
+      <p>Une aide ponctuelle d’abord, puis un suivi mensuel selon le volume de vos documents.</p>
+    </div>
+    <div class="colonnes colonnes--serrees">
+      <article class="filet">
+        <span class="lettre">a.</span>
+        <h3>Classement et courriers</h3>
+        <p>Tri, classement et suivi de vos documents et de vos courriers, pour retrouver chaque pièce facilement.</p>
+        <p class="prix">[[durée et prix, ou « sur devis »]]</p>
+      </article>
+      <article class="filet">
+        <span class="lettre">b.</span>
+        <h3>Dossiers et échéances</h3>
+        <p>Suivi de vos dossiers et rappel des échéances importantes, pour ne plus rien laisser filer.</p>
+        <p class="prix">[[durée et prix, ou « sur devis »]]</p>
+      </article>
+      <article class="filet">
+        <span class="lettre">c.</span>
+        <h3>Pièces pour votre comptable</h3>
+        <p>Préparation des pièces dont votre comptable a besoin, complètes et dans les temps.</p>
+        <p class="prix">[[durée et prix, ou « sur devis »]]</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="bloc beige" id="qui-fait-quoi" aria-labelledby="titre-qui">
+  <div class="conteneur">
+    <h2 id="titre-qui">Qui fait <em>quoi&nbsp;?</em></h2>
+    <div class="duo">
+      <div class="duo__case">
+        <p class="surtitre">Stell’A-cademy</p>
+        <h3>Le soutien administratif et documentaire</h3>
+        <ul>
+          <li>Classement et courriers</li>
+          <li>Dossiers et échéances</li>
+          <li>Préparation des pièces pour votre comptable</li>
+        </ul>
+      </div>
+      <div class="duo__case duo__case--sombre sombre">
+        <p class="surtitre">Votre comptable</p>
+        <h3>Reste responsable de</h3>
+        <ul>
+          <li>la comptabilité</li>
+          <li>les déclarations</li>
+          <li>les conseils fiscaux</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" aria-labelledby="titre-autres">
+  <div class="conteneur">
+    <h2 class="surtitre" id="titre-autres">Les autres pôles</h2>
+    {{autres-poles:3}}
+  </div>
+</section>
+
+<section class="sombre appel" aria-labelledby="titre-appel">
+  <div class="conteneur">
+    <h2 id="titre-appel">Reprenez la main<br><em>sur vos papiers.</em></h2>
+    <a class="bouton bouton--nude" href="{{racine}}demander-un-devis/?pole=3">Demander un devis</a>
   </div>
 </section>
