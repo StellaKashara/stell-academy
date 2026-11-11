@@ -196,9 +196,10 @@ def vers_apercu(html, est_accueil):
         if url.startswith(("http", "mailto:", "tel:", "#")):
             return m.group(0)
         base, ancre = (url.split("#", 1) + [""])[:2]
+        base, requete = (base.split("?", 1) + [""])[:2]
         if base.endswith("/"):
             base += "index.html"
-        return f'{attr}="{base}{"#" + ancre if ancre else ""}"'
+        return f'{attr}="{base}{"?" + requete if requete else ""}{"#" + ancre if ancre else ""}"'
 
     html = re.sub(r'(href)="([^"]*)"', corriger, html)
     if est_accueil:
