@@ -21,22 +21,6 @@
           "url": "https://www.ucm.be/formations/soiree-dautomne-100-ans-de-liens"
         },
         {
-          "pole": 3,
-          "titre": "TVA mensuelle : échéance le 20 novembre",
-          "resume": "Les indépendants qui déclarent leur TVA chaque mois doivent déposer la déclaration d’octobre et payer la TVA due au plus tard le vendredi 20 novembre 2026. C’est le bon moment pour rassembler les pièces et les transmettre à votre comptable.",
-          "date": "2026-11-16",
-          "source": "Finances Indépendants – calendrier fiscal",
-          "url": "https://finances-independants.be/fr/calendrier-fiscal-social"
-        },
-        {
-          "pole": 4,
-          "titre": "Rappel : la facture électronique est obligatoire entre entreprises",
-          "resume": "Depuis le 1er janvier 2026, les entreprises belges assujetties à la TVA doivent s’envoyer leurs factures sous forme électronique structurée, via le réseau Peppol. hub.brussels fait le point sur ce qu’il faut mettre en place.",
-          "date": "2026-11-16",
-          "source": "hub.brussels",
-          "url": "http://info.hub.brussels/blog/la-facturation-numerique-devient-obligatoire-etes-vous-prete"
-        },
-        {
           "pole": 5,
           "titre": "Communication : Goosething entre au capital de Studio Copain",
           "resume": "Le média belge du marketing Media Marketing annonce un rapprochement entre deux acteurs de la création. Le secteur de la communication continue de se regrouper autour de studios créatifs.",
@@ -51,6 +35,22 @@
           "date": "2026-11-17",
           "source": "Digital Wallonia",
           "url": "https://www.digitalwallonia.be/fr/publications/awards-ia-digital-wallonia/"
+        },
+        {
+          "pole": 3,
+          "titre": "Rappel : la facture électronique est obligatoire entre entreprises",
+          "resume": "Depuis le 1er janvier 2026, les entreprises belges assujetties à la TVA doivent s’envoyer leurs factures sous forme électronique structurée, via le réseau Peppol. Indépendants : vérifiez que votre outil de facturation est prêt. hub.brussels fait le point sur ce qu’il faut mettre en place.",
+          "date": "2026-11-16",
+          "source": "hub.brussels",
+          "url": "http://info.hub.brussels/blog/la-facturation-numerique-devient-obligatoire-etes-vous-prete"
+        },
+        {
+          "pole": 4,
+          "titre": "Gestion de projets : un webinaire gratuit sur l’IA et la durabilité",
+          "resume": "La section belge du Project Management Institute (PMI Belgium) organise le 25 novembre, de 18 h à 19 h, un webinaire gratuit intitulé « Twin Transformation ». Il montre comment l’intelligence artificielle et la durabilité changent la façon de mener les projets.",
+          "date": "2026-11-16",
+          "source": "PMI Belgium Chapter",
+          "url": "https://pmi-belgium.be/calendar"
         }
       ]
     }
