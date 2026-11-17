@@ -19,6 +19,8 @@ Dans les contenus :
                              le numéro = classes CSS ; « hero » = chargement immédiat.
     {{autres-poles:3}}    -> liens vers les cinq autres pôles (ici : sauf le pôle 3)
     {{formulaire:contact}} -> formulaire de demande (contact, devis ou consultation)
+    {{actualites}}        -> actualités, lues dans _source/actualites.json
+    {{partenaires}}       -> partenaires, lus dans _source/partenaires.json
 
 Utilisation :
     python3 _source/construire.py              # écrit le site à la racine du dépôt
@@ -26,6 +28,8 @@ Utilisation :
 
 Le dossier _source n'est pas publié par GitHub Pages (dossier commençant par « _ »).
 """
+import html as html_mod
+import json
 import pathlib
 import re
 import shutil
@@ -149,6 +153,102 @@ def formulaire(m):
 </div>'''
 
 
+MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août",
+        "septembre", "octobre", "novembre", "décembre"]
+
+
+def date_fr(iso):
+    annee, mois, jour = (int(x) for x in iso.split("-"))
+    return f"{'1er' if jour == 1 else jour} {MOIS[mois - 1]} {annee}"
+
+
+def e(texte):
+    return html_mod.escape(texte, quote=True)
+
+
+def etiquette_pole(numero):
+    _, nom = POLES[int(numero)]
+    return f'<p class="etiquette-pole etiquette-pole--{numero}">Pôle 0{numero} · {nom}</p>'
+
+
+def actualites(_m):
+    donnees = json.loads((SOURCE / "actualites.json").read_text(encoding="utf-8"))
+    blocs = []
+    nouvelles = donnees.get("nos_nouvelles", [])
+    if nouvelles:
+        cartes = []
+        for n in nouvelles:
+            lien = (f'<a class="lien-fleche" href="{e(n["lien"])}">En savoir plus</a>' if n.get("lien") else "")
+            cartes.append(f'''<article class="actu actu--maison">
+        <p class="actu__meta"><time datetime="{n["date"]}">{date_fr(n["date"])}</time></p>
+        <h3>{e(n["titre"])}</h3>
+        <p>{e(n["texte"])}</p>
+        {lien}
+      </article>''')
+        blocs.append('''<section class="bloc sombre" aria-labelledby="titre-nos-nouvelles">
+  <div class="conteneur">
+    <h2 id="titre-nos-nouvelles">Les nouvelles <em>de Stell’A-cademy.</em></h2>
+    <div class="actus">
+      ''' + "\n      ".join(cartes) + '''
+    </div>
+  </div>
+</section>''')
+    semaines = donnees.get("semaines", [])
+    if not semaines:
+        blocs.append('''<section class="bloc"><div class="conteneur"><p class="en-preparation">Les premières actualités arrivent bientôt.</p></div></section>''')
+    for i, s in enumerate(semaines):
+        cartes = []
+        for a in sorted(s["articles"], key=lambda a: a["pole"]):
+            cartes.append(f'''<article class="actu">
+        {etiquette_pole(a["pole"])}
+        <h3>{e(a["titre"])}</h3>
+        <p class="actu__meta"><time datetime="{a["date"]}">{date_fr(a["date"])}</time> · {e(a["source"])}</p>
+        <p>{e(a["resume"])}</p>
+        <a class="lien-fleche" href="{e(a["url"])}" target="_blank" rel="noopener">Lire la source<span class="visuellement-cache"> (nouvel onglet)</span></a>
+      </article>''')
+        fond = " beige" if i % 2 else ""
+        blocs.append(f'''<section class="bloc{fond}" aria-labelledby="semaine-{s["semaine"]}">
+  <div class="conteneur">
+    <div class="tete">
+      <h2 id="semaine-{s["semaine"]}">{"Cette semaine" if i == 0 else "Semaine du " + date_fr(s["semaine"])}</h2>
+      <p>Semaine du {date_fr(s["semaine"])}</p>
+    </div>
+    <div class="actus">
+      ''' + "\n      ".join(cartes) + '''
+    </div>
+  </div>
+</section>''')
+    return "\n\n".join(blocs)
+
+
+def partenaires(_m):
+    liste = json.loads((SOURCE / "partenaires.json").read_text(encoding="utf-8"))
+    cartes = []
+    if not liste:
+        for _ in range(3):
+            cartes.append('''<article class="partenaire">
+        <div class="partenaire__logo partenaire__logo--attente" aria-hidden="true">Logo</div>
+        <p class="etiquette-pole">[[pôle lié]]</p>
+        <h2>[[nom du partenaire]]</h2>
+        <p>[[2 ou 3 phrases sur ce que fait ce partenaire]]</p>
+        <p>[[lien du site]]</p>
+      </article>''')
+    for p in liste:
+        logo = (f'<img src="{{{{racine}}}}images/partenaires/{e(p["logo"])}" alt="Logo de {e(p["nom"])}" loading="lazy" decoding="async">'
+                if p.get("logo") else '<span aria-hidden="true">Logo</span>')
+        lien = (f'<a class="lien-fleche" href="{e(p["site"])}" target="_blank" rel="noopener">Voir le site<span class="visuellement-cache"> de {e(p["nom"])} (nouvel onglet)</span></a>'
+                if p.get("site") else "")
+        poles = "\n        ".join(etiquette_pole(n) for n in p.get("poles", []))
+        cartes.append(f'''<article class="partenaire">
+        <div class="partenaire__logo">{logo}</div>
+        {poles}
+        <h2>{e(p["nom"])}</h2>
+        <p>{e(p["presentation"])}</p>
+        {lien}
+      </article>''')
+    return '<div class="partenaires">\n      ' + "\n      ".join(cartes) + "\n    </div>"
+
+
 def lire_page(fichier):
     texte = fichier.read_text(encoding="utf-8")
     entete, contenu = texte.split("\n---\n", 1)
@@ -174,6 +274,8 @@ def construire_page(gabarit, page):
     racine = "../" * profondeur or "./"
     html = gabarit.replace("{{contenu}}", page["contenu"].strip())
     html = re.sub(r"\{\{formulaire:([a-z]+)\}\}", formulaire, html)
+    html = re.sub(r"\{\{actualites\}\}", actualites, html)
+    html = re.sub(r"\{\{partenaires\}\}", partenaires, html)
     html = re.sub(r"\{\{photo:(\d\d)([^}]*)\}\}", photo, html)
     html = re.sub(r"\{\{autres-poles:(\d)\}\}", autres_poles, html)
     html = html.replace("{{titre}}", page["titre"])

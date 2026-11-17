@@ -65,10 +65,24 @@ Format WebP, moins de 300 Ko ; grandes photos 2400 × 1600 px, cartes en portrai
 
 Image de partage (aperçu sur les réseaux sociaux, 1200 × 630 px) : à prévoir avec les photos.
 
-## 7. Logo
+## 7. Nos partenaires
+Pour chaque partenaire (accord pour le logo : confirmé) :
+- [ ] Nom
+- [ ] Logo (image PNG ou SVG, fond transparent si possible)
+- [ ] 2 ou 3 phrases sur ce qu’il fait
+- [ ] Lien de son site
+- [ ] Pôle(s) lié(s)
+
+Les partenaires sont enregistrés dans `_source/partenaires.json` et les logos dans `images/partenaires/`.
+
+## 7 bis. Actualités
+Mises à jour chaque lundi par Claude (validation avant publication) dans `_source/actualites.json`.
+Vos propres nouvelles (atelier, offre, événement) : envoyez-les, elles passent en tête de page.
+
+## 8. Logo
 - [ ] Fichier du logo officiel (en attendant, le nom est écrit en texte et l’icône d’onglet est un simple aplat de couleur).
 
-## 8. Formulaires (contact, devis, consultation) — configuration technique, une seule fois
+## 9. Formulaires (contact, devis, consultation) — configuration technique, une seule fois
 Le site n’a pas de serveur : les formulaires passent par le service gratuit Formspree.
 1. Créer un compte sur formspree.io avec l’e-mail de Stell’A-cademy et créer un formulaire.
 2. Copier son identifiant (ex. `xyzabcd`) et le remplacer dans `_source/construire.py`, ligne `FORMULAIRE_ACTION`.

@@ -1,0 +1,58 @@
+{
+  "nos_nouvelles": [],
+  "semaines": [
+    {
+      "semaine": "2026-11-16",
+      "articles": [
+        {
+          "pole": 1,
+          "titre": "Bruxelles : une formation gratuite pour les 16-30 ans",
+          "resume": "YouthStart propose à Bruxelles un parcours gratuit pour les jeunes de 16 à 30 ans sans emploi ni formation, pour reprendre confiance et construire un projet. Les séances ont lieu les 16, 18, 20, 23, 25, 27 et 30 novembre, puis le 2 décembre.",
+          "date": "2026-11-16",
+          "source": "YouthStart Belgique",
+          "url": "https://youthstart.be/fr/evenement/bruxelles94/"
+        },
+        {
+          "pole": 2,
+          "titre": "L’UCM fête 100 ans de liens entre indépendants",
+          "resume": "L’Union des classes moyennes a marqué son centenaire par une soirée de réseautage au Cinéma Palace, à Bruxelles, le 5 novembre. Une belle occasion de rappeler l’importance du réseau pour les indépendants et les PME.",
+          "date": "2026-11-05",
+          "source": "UCM",
+          "url": "https://www.ucm.be/formations/soiree-dautomne-100-ans-de-liens"
+        },
+        {
+          "pole": 3,
+          "titre": "TVA mensuelle : échéance le 20 novembre",
+          "resume": "Les indépendants qui déclarent leur TVA chaque mois doivent déposer la déclaration d’octobre et payer la TVA due au plus tard le vendredi 20 novembre 2026. C’est le bon moment pour rassembler les pièces et les transmettre à votre comptable.",
+          "date": "2026-11-16",
+          "source": "Finances Indépendants – calendrier fiscal",
+          "url": "https://finances-independants.be/fr/calendrier-fiscal-social"
+        },
+        {
+          "pole": 4,
+          "titre": "Rappel : la facture électronique est obligatoire entre entreprises",
+          "resume": "Depuis le 1er janvier 2026, les entreprises belges assujetties à la TVA doivent s’envoyer leurs factures sous forme électronique structurée, via le réseau Peppol. hub.brussels fait le point sur ce qu’il faut mettre en place.",
+          "date": "2026-11-16",
+          "source": "hub.brussels",
+          "url": "http://info.hub.brussels/blog/la-facturation-numerique-devient-obligatoire-etes-vous-prete"
+        },
+        {
+          "pole": 5,
+          "titre": "Communication : Goosething entre au capital de Studio Copain",
+          "resume": "Le média belge du marketing Media Marketing annonce un rapprochement entre deux acteurs de la création. Le secteur de la communication continue de se regrouper autour de studios créatifs.",
+          "date": "2026-11-14",
+          "source": "Media Marketing",
+          "url": "https://www.mm.be/"
+        },
+        {
+          "pole": 6,
+          "titre": "Liège accueille les premiers Awards de l’IA",
+          "resume": "Digital Wallonia organise le 17 novembre, au Palais des Congrès de Liège, la première édition des Awards de l’IA. Des projets wallons sont récompensés dans cinq catégories, avec parmi les finalistes Infrabel, Alteo Group et le CHU UCL Namur.",
+          "date": "2026-11-17",
+          "source": "Digital Wallonia",
+          "url": "https://www.digitalwallonia.be/fr/publications/awards-ia-digital-wallonia/"
+        }
+      ]
+    }
+  ]
+}
