@@ -2,6 +2,59 @@
   "nos_nouvelles": [],
   "semaines": [
     {
+      "semaine": "2026-11-23",
+      "articles": [
+        {
+          "pole": 1,
+          "titre": "Bruxelles Formation lance une formation d’administrateur systèmes et réseaux",
+          "resume": "L’opérateur public bruxellois de formation professionnelle met en avant une nouvelle formation pour devenir administrateur ou administratrice systèmes et réseaux, un métier recherché. Les conditions d’accès et les inscriptions sont détaillées sur son site.",
+          "date": "2026-11-18",
+          "source": "Bruxelles Formation",
+          "url": "https://www.bruxellesformation.brussels/"
+        },
+        {
+          "pole": 2,
+          "titre": "Réseau Entreprendre Bruxelles : networking de Noël le 24 novembre",
+          "resume": "Le Réseau Entreprendre Bruxelles, qui réunit des chefs d’entreprise pour soutenir les créateurs, organise un networking de Noël le 24 novembre de 18 h à 21 h. Une séance de speed-coaching suit le 3 décembre.",
+          "date": "2026-11-23",
+          "source": "Réseau Entreprendre Bruxelles",
+          "url": "https://reseauentreprendrebruxelles.org/events/"
+        },
+        {
+          "pole": 3,
+          "titre": "Cotisation annuelle des sociétés : l’avis arrive en novembre",
+          "resume": "Les indépendants en société reçoivent en novembre l’avis d’échéance de la cotisation annuelle à charge des sociétés pour 2026. L’UCM demande que le barème réduit pour les petites sociétés soit maintenu.",
+          "date": "2026-11-23",
+          "source": "UCM",
+          "url": "https://www.ucm.be/actualites/cotisation-charge-des-societes-2026"
+        },
+        {
+          "pole": 4,
+          "titre": "Facility management : une chaire pour faire évoluer le métier",
+          "resume": "En France, le syndicat des professionnels du facility management (SYPEMI) soutient une chaire « Innovation, Numérique et Immobilier » avec la Fondation Université Gustave Eiffel, pour préparer l’avenir des métiers du secteur. L’information est reprise dans la revue de presse de la semaine du 16 novembre de Facilities.fr.",
+          "date": "2026-11-16",
+          "source": "Facilities.fr (France)",
+          "url": "https://facilities.fr/"
+        },
+        {
+          "pole": 5,
+          "titre": "LinkedIn : les publications à plusieurs ouvertes à tous",
+          "resume": "LinkedIn permet désormais à chacun de publier un même post avec jusqu’à cinq membres ou pages d’entreprise. Une bonne façon pour une petite entreprise de gagner en visibilité avec ses partenaires.",
+          "date": "2026-11-20",
+          "source": "Influent (récapitulatif LinkedIn de novembre)",
+          "url": "https://influent.co/blog/linkedin-updates-november-2026"
+        },
+        {
+          "pole": 6,
+          "titre": "Wallonie : de nouvelles règles pour les centres de données",
+          "resume": "Le gouvernement wallon a fixé le 12 novembre de nouvelles règles pour l’installation des centres de données, très liés à l’essor de l’IA. Sauf exception, les projets d’au moins 25 MW devront conclure au préalable un partenariat avec la Région, pour ne pas pénaliser les entreprises wallonnes.",
+          "date": "2026-11-12",
+          "source": "21News",
+          "url": "https://www.21news.be/intelligence-artificielle-la-wallonie-refuse-que-les-data-centers-penalisent-ses-entreprises/"
+        }
+      ]
+    },
+    {
       "semaine": "2026-11-16",
       "articles": [
         {
